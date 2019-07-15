@@ -1,0 +1,4 @@
+/* This hint shows up when app asks about your location. */
+
+"NSLocationWhenInUseUsageDescription" = "Aby znaleźć hotele w pobliżu";
+"NSLocationUsageDescription" = "Aby znaleźć hotele w pobliżu";
