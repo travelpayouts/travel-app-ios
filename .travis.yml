@@ -1,0 +1,20 @@
+language: objective-c
+osx_image: xcode10.2
+
+rvm: 2.3.7
+before_install:
+    - gem install cocoapods -v '1.7.3'
+    - pod setup > /dev/null    #/dev/null to prevent long logs
+    - gem install xcpretty
+
+install:
+    - pod install --repo-update --verbose
+
+podfile: Podfile
+xcode_workspace: TravelpayoutsTravelApp.xcworkspace
+xcode_scheme: TravelpayoutsTravelApp
+xcode_sdk:
+    - iphonesimulator
+
+script:
+   - xcodebuild -workspace TravelpayoutsTravelApp.xcworkspace -scheme TravelpayoutsTravelApp -sdk iphonesimulator -destination "platform=iOS Simulator,OS=12.2,name=iPhone 7" COMPILER_INDEX_STORE_ENABLE=NO build test | xcpretty

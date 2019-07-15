@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="InfoScreenRateCell" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0k-aY-R5D">
+                        <rect key="frame" x="35" y="8" width="305" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="305" id="F9S-gz-Dee"/>
+                            <constraint firstAttribute="height" constant="45" id="vUf-rK-mKq"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="actionButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EBk-QD-Lu1"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="N0k-aY-R5D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9CT-cK-la3"/>
+                    <constraint firstItem="N0k-aY-R5D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="750" constant="16" id="K1m-Wy-9uT"/>
+                    <constraint firstAttribute="trailing" secondItem="N0k-aY-R5D" secondAttribute="trailing" priority="750" constant="16" id="bzd-cQ-IOK"/>
+                    <constraint firstItem="N0k-aY-R5D" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="jU4-le-Nvf"/>
+                    <constraint firstAttribute="bottom" secondItem="N0k-aY-R5D" secondAttribute="bottom" constant="30" id="sOf-3F-L5F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="actionButton" destination="N0k-aY-R5D" id="qSF-xn-FpT"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="68"/>
+        </tableViewCell>
+    </objects>
+</document>

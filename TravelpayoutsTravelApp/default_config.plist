@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>partner_marker</key>
+	<string></string>
+	<key>api_token</key>
+	<string></string>
+	<key>appodeal_key</key>
+	<string></string>
+	<key>flights_enabled</key>
+	<true/>
+	<key>hotels_enabled</key>
+	<true/>
+	<key>default_locale</key>
+	<string>en</string>
+	<key>firebase_enabled</key>
+	<false/>
+	<key>app_description</key>
+	<dict>
+		<key>en</key>
+		<string>App description</string>
+		<key>ru</key>
+		<string>Описание приложения</string>
+	</dict>
+	<key>feedback_email</key>
+	<string></string>
+	<key>itunes_link</key>
+	<string></string>
+	<key>search_params</key>
+	<dict>
+		<key>default_currency</key>
+		<string>USD</string>
+		<key>flights_origin</key>
+		<string>BOS</string>
+		<key>flights_destination</key>
+		<string>NYC</string>
+		<key>available_airlines</key>
+		<array/>
+		<key>hotels_city</key>
+		<dict>
+			<key>id</key>
+			<string>13964</string>
+			<key>selectable</key>
+			<true/>
+			<key>names</key>
+			<dict>
+				<key>en</key>
+				<string>Venice</string>
+				<key>ru</key>
+				<string>Венеция</string>
+			</dict>
+			<key>headers</key>
+			<dict>
+				<key>en</key>
+				<string>Search the best place to rest in Venice</string>
+				<key>ru</key>
+				<string>Лучшие цены на отели в Венеции</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>external_links</key>
+	<dict>
+		<key>en</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Travel App</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>ru</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Travel App</string>
+				<key>url</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>
