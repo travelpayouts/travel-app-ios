@@ -19,9 +19,9 @@
 	<key>app_description</key>
 	<dict>
 		<key>en</key>
-		<string>App description</string>
+		<string></string>
 		<key>ru</key>
-		<string>Описание приложения</string>
+		<string></string>
 	</dict>
 	<key>feedback_email</key>
 	<string></string>
@@ -65,7 +65,7 @@
 		<array>
 			<dict>
 				<key>name</key>
-				<string>Travel App</string>
+				<string></string>
 				<key>url</key>
 				<string></string>
 			</dict>
@@ -74,7 +74,7 @@
 		<array>
 			<dict>
 				<key>name</key>
-				<string>Travel App</string>
+				<string></string>
 				<key>url</key>
 				<string></string>
 			</dict>

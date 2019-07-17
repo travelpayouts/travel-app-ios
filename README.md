@@ -1,43 +1,54 @@
-Travelpayouts Travel App iOS
+Aviasales Travel iOS SDK
 =================
-[![Travis](https://img.shields.io/travis/travelpayouts/travel-app-ios/master.svg)](https://travis-ci.org/travelpayouts/travel-app-ios)
-#### README in [English](https://github.com/travelpayouts/travel-app-ios/blob/master/README_EN.md)
-## Описание
-[Travelpayouts](https://www.travelpayouts.com) Travelpayouts Travel App iOS — шаблон приложения для поиска авиабилетов и отелей. Когда пользователь покупает билет или бронирует отель, вы получаете вознаграждение. При разработке официальных приложений Aviasales и Hotellook используется та же самая кодовая база.
-Вы можете использовать этот шаблон как основу для своего приложения, либо же просто сделать конфигурацию основных параметров (название, цветовая схема, иконка и др.) и использовать как есть.
-Чтобы отслеживать выплаты, посетите нашу партнерскую сеть — [Travelpayouts.com](https://www.travelpayouts.com/).
-Узнайте подробнее о доходах в [Travelpayouts FAQ](https://support.travelpayouts.com/hc/ru/articles/203955613-Комиссия-и-выплаты).
-## <a name="usage"></a>Использование шаблонного проекта
-### 📲 Установка
-1. Скачайте себе последний release (не beta) шаблонного проекта отсюда: [https://github.com/travelpayouts/travel-app-ios/releases](https://github.com/travelpayouts/travel-app-ios/releases).
-Либо клонируйте репозиторий, чтобы вести локальную разработку.
-2. Скачайте зависимости, выполнив команду ```pod install --repo-update``` в каталоге с шаблонным проектом.
-**После этого для работы с проектом используйте файл ```TravelpayoutsTravelApp.xcworkspace```**.
-3. Подставьте правильные значения партнерского токена и маркера в файле ```TravelpayoutsTravelApp/default_config.plist``` в параметры ```partner_marker``` и ```api_token```.
-4. Если у вас еще нет партнерского маркера и токена, получите их в [Travelpayouts](https://travelpayouts.com/).
-5. Измените название приложения в файлах ```Info.plist``` и ```LaunchScreen.xib```.
-6. В конфиге ```default_config.plist``` дополнительно можно включать и выключать вкладки поиска билетов / отелей, добавлять описание приложения, email для обратной связи, ссылку на веб-сайт приложения, и ссылку на приложение в App Store, которые будут отображаться в разделе «About», плюс локализованные значения для внешних ссылок.
-### 📱 Поддержка версий iOS
-Поддерживаются версии, начиная с iOS 10.0
-### 🖼 Иконка приложения
-**Не забудьте заменить иконку приложения** (по умолчанию, в шаблоне используются иконки, залитые белым цветом). Для этого в папке ```TravelpayoutsTravelApp/AppIcon.xcassets/AppIcon.appiconset``` достаточно заменить картинки (20.png, 29.png, 40.png и т.д.) на свои с аналогичными именами.
-### ✈️🏨 Выбор вкладок
-Если вы хотите убрать вкладку поиска билетов или поиска отелей, поменяйте значения ```flights_enabled``` или ```hotels_enabled``` на NO в конфиге проекта. Вкладку информации убрать таким способом нельзя.
-### 🔧🌻 Настройка цветов
-Выбрать цветовую схему можно в файле ```ColorSchemeManager.swift```. Достаточно прописать в переменной ```current``` одно из значений BlackColorScheme() / PurpleColorScheme(). Или установить значение CustomColorScheme() и настроить схему по своему усмотрению в файле ```CustomColorScheme.swift```.
-Вот список основных полей с пояснениями:
+[![Travis](https://img.shields.io/travis/travelpayouts/travel-app-ios/master.svg)](https://travis-ci.com/travelpayouts/travel-app-ios)
+#### Руководство [по-русски](https://github.com/travelpayouts/travel-app-ios/blob/master/README_RU.md)
+## Description
+[Travelpayouts](https://www.travelpayouts.com) Travelpayouts Travel App iOS is an app template for flights and hotels search. When your user books flight or hotel, you get paid. Aviasales, Jetradar and Hotellook official apps are based on the same code.
+You can use this template as a base for you application, or you can use it as is changing only the main settings (app title, color scheme, icon, etc).
+To track statistics and payments, please visit our affiliate network website — [Travelpayouts.com](https://www.travelpayouts.com/).
+To learn more about the Travelpayouts affiliate network, please visit [Travelpayouts FAQ](https://support.travelpayouts.com/hc/en-us/articles/203955613-Commission-and-payments).
+## <a name="usage"></a>How to build your own app using the template project
+### 📲 Setup
+1. Download the latest release of template project (not beta) here: [https://github.com/travelpayouts/travel-app-ios/releases](https://github.com/travelpayouts/travel-app-ios/releases), file Source Code (zip).
+Alternatively you can clone the repository for development.
+2. Dependencies are managed via CocoaPods (cocoapods.org). It can be installed via Bundler.
+The following installation commands should be executed in the project folder (unpacked zip archive or cloned repository)
+```bash
+sudo gem install bundler
+bundle install --path vendor/bundle
+pod install --repo-update
+```
 
-|Название|Описание|
+**Use the ```TravelpayoutsTravelApp.xcworkspace``` to work with your project**.
+
+3. Add your partner's token and marker in ```TravelpayoutsTravelApp/default_config.plist``` file to parameters ```partner_marker``` and ```api_token```.
+You can get the partner marker and API token on our website: [Travelpayouts](https://travelpayouts.com/).
+4. AppStore app publishing requires unique app identifier (bundle id). It can be configured in Xcode.
+![](https://github.com/travelpayouts/travel-app-ios/raw/master/readme_files/xcode_bundle_id.png)
+5. Change app name in files ```Info.plist``` and ```LaunchScreen.xib```.
+6. Use the ```default_config.plist``` config file to enable/disable flights/hotels tabs, to add app description, feedback email, app website link and App Store app link for the "About" page and to add localized values for external links.
+7. Test the app on your iPhone/iPad or in Xcode simulator.
+8. Publish the app via [App Store Connect](https://appstoreconnect.apple.com)
+### 📱 iOS versions support
+Application supports iOS 10.0 and higher
+### 🖼 App Icon
+**Do not forget to replace app icons** (Template project includes simple white icons by default). To do this you will need to replace icons in ```TravelpayoutsTravelApp/AppIcon.xcassets/AppIcon.appiconset``` folder (20.png, 29.png, 40.png etc) with your own icons with same names.
+### ✈️🏨 Tab selection
+If you want to remove flights or hotels search tab, change values of ```flights_enabled``` and ```hotels_enabled``` to NO in Project settings. Information tab can't be removed this way.
+### 🔧🌻 Color customization
+You can choose color scheme in ```ColorSchemeManager.swift``` file. Just add to ```current``` variable one of these values: BlackColorScheme() / PurpleColorScheme(). Or set CustomColorScheme() value and set up any color scheme you need in ```CustomColorScheme.swift``` file.
+Here is a list of primary fields with explanations:
+
+|Title|Description|
 |--------|--------|
-mainColor | Основной цвет приложения
-actionColor | Цвет выделения основных действий
+mainColor | Primary app color
+actionColor | Actions highlight color
 
-Более детально настроить цвета можно в файле ```ASTJRC.swift``` путем переопределения методов базового класса ```JRC```.
-### 🤑 Настройка рекламы Appodeal
-Для того чтобы вы могли получать дополнительную прибыль с рекламы, мы интегрировали в приложение рекламный SDK [Appodeal](https://www.appodeal.com/). Для его настройки задайте параметр ```appodeal_key```  в конфиге ```default_config.plist``` (получите ключ API, зарегистрировавшись в [Appodeal](https://www.appodeal.com/)).
-По умолчанию, реклама будет отображаться на экранах ожидания поиска билетов и отелей.
-### ⭐️ Обратная связь и оценка приложения
-Задайте значения параметрам ```feedback_email``` и ```itunes_link``` в файле ```default_config.plist``` чтобы активировать пункты меню "Написать нам письмо" и "Оценить приложение".
-Рекомендованный формат ссылки ```itunes_link```: ```https://itunes.apple.com/app/id1234567890?action=write-review```, где ```id1234567890``` это идентификатор опубликованного приложения.
-### 🏭 Использование Firebase
-Шаблонное приложение поддерживает сервисы **Firebase**. Для этого нужно подключить приложение в консоли Firebase, скачать и скопировать с заменой в папку ```TravelpayoutsTravelApp``` **GoogleService-Info.plist** и перевести флаг **firebase_enabled** в состояние **YES** в **default_config.plist**.  Из коробки поддерживается работа аналитики, а именно поиск / переход на билет / покупка в билетной части и поиск / выбор отеля / покупка в отельной части.
+Fine-grained color customization can be configured in file ```ASTJRC.swift``` by overriding colors from the base class ```JRC```.
+### 🤑 Appodeal ads setup
+To get additional profit from ads, we've integrated Mobile Ads [Appodeal SDK](https://www.appodeal.com/) in the app. To configure it, specify the ```appodeal_key``` parameter in the ```default_config.plist``` file (get your API key by registering at [Appodeal](https://www.appodeal.com/)). Ads will appear on the waiting screens for tickets and hotels searching by default.
+### ⭐️ Feedback
+Set up the ```feedback_email``` and ```itunes_link``` parameters in ```default_config.plist``` file to activate "Contact us" and "Rate this app" links.
+The recommended format for ```itunes_link``` is the following: ```https://itunes.apple.com/app/id1234567890?action=write-review```, where ```id1234567890``` is the identifier of a published application.
+## 🏭 **Use of Firebase**
+Template app supports **Firebase** services. To enable them, please connect your app in the Firebase console, download and copy with replacement the ```GoogleService-Info.plist``` file to ```TravelpayoutsTravelApp``` folder and switch the ```firebase_enabled``` flag to ```YES``` in the ```default_config.plist``` file. Out of the box there is an analytics support for: Search / Ticket opened / Ticket booked in the airlines part and Search / Hotel opened / Hotel booked in the hotels part of the app.
