@@ -1,4 +1,4 @@
-Aviasales Travel iOS SDK
+Travelpayouts Travel App iOS
 =================
 [![Travis](https://img.shields.io/travis/travelpayouts/travel-app-ios/master.svg)](https://travis-ci.com/travelpayouts/travel-app-ios)
 #### Руководство [по-русски](https://github.com/travelpayouts/travel-app-ios/blob/master/README_RU.md)
