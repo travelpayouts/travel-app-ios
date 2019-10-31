@@ -17,4 +17,4 @@ xcode_sdk:
     - iphonesimulator
 
 script:
-   - xcodebuild -workspace TravelpayoutsTravelApp.xcworkspace -scheme TravelpayoutsTravelApp -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.1,name=iPhone 8" COMPILER_INDEX_STORE_ENABLE=NO build test
+   - xcodebuild -workspace TravelpayoutsTravelApp.xcworkspace -scheme TravelpayoutsTravelApp -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.1,name=iPhone 8" COMPILER_INDEX_STORE_ENABLE=NO build test | bundle exec xcpretty
