@@ -36,17 +36,14 @@ class InfoScreenViewController: UIViewController, InfoScreenIconImageViewFiveTim
     // MARK: - Setup
 
     func setupViewController() {
-        automaticallyAdjustsScrollViewInsets = false
         setupTableView()
         setupUI()
     }
 
     func setupTableView() {
-        tableView.backgroundColor = .white
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 44
         tableView.tableFooterView = UIView(frame: .zero)
-        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: tabBarController?.tabBar.frame.height ?? 0, right: 0)
     }
 
     func setupUI() {
@@ -79,6 +76,7 @@ private extension InfoScreenViewController {
 
     func buildDetailCell(cellModel: InfoScreenDetailCellModel) -> UITableViewCell {
         let cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
+        cell.backgroundColor = .clear
         cell.textLabel?.text = cellModel.title
         cell.textLabel?.textColor = ASTColorScheme.darkTextColor()
         cell.detailTextLabel?.text = cellModel.subtitle
@@ -89,6 +87,7 @@ private extension InfoScreenViewController {
 
     func buildBasicCell(cellModel: InfoScreenBasicCellModel) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.backgroundColor = .clear
         cell.textLabel?.text = cellModel.title
         cell.textLabel?.textColor = ASTColorScheme.darkTextColor()
         cell.accessoryType = .disclosureIndicator
@@ -97,6 +96,7 @@ private extension InfoScreenViewController {
 
     func buildExternalCell(cellModel: InfoScreenExtrnalCellModel) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        cell.backgroundColor = .clear
         cell.textLabel?.text = cellModel.name
         cell.textLabel?.textColor = ASTColorScheme.darkTextColor()
         cell.accessoryType = .disclosureIndicator

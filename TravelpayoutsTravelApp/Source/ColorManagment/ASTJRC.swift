@@ -21,4 +21,13 @@ class ASTJRC: JRC {
         return ColorSchemeManager.shared.current.actionColor
     }
 
+    // Color override example
+//    override func SEARCH_FORM_BACKGROUND() -> UIColor {
+//        return .green
+//    }
+
+    // Color example with iOS 13 dark mode support (requires Xcode 11)
+//    override func COMMON_BACKGROUND() -> UIColor {
+//        return UIColor.make(UIColor(hex: 0xffffff), dark: UIColor(hex: 0x0A0A0A))
+//    }
 }

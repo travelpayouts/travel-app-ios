@@ -20,7 +20,7 @@ class InfoScreenPresenter {
 
     func attach(_ view: InfoScreenViewProtocol) {
         self.view = view
-        view.set(title: NSLS("INFORMATION_TITLE"))
+        view.set(title: TemplateAppLocalizations.shared.informationTabTitle)
         view.set(cellModels: buildCellModels())
 
         currencyObserver = currencyObserver ?? NotificationCenter.default
@@ -116,15 +116,15 @@ private extension InfoScreenPresenter {
     }
 
     func buildRateCellModel() -> InfoScreenRateCellModel {
-        return InfoScreenRateCellModel(name: NSLS("RATE_HANDLE_TITLE"))
+        return InfoScreenRateCellModel(name: TemplateAppLocalizations.shared.itunesRateLinkTitle)
     }
 
     func buildSettingsCellModel() -> InfoScreenBasicCellModel {
-        return InfoScreenBasicCellModel(type: .settings, title: NSLS("SETTINGS_TITLE"))
+        return InfoScreenBasicCellModel(type: .settings, title: TemplateAppLocalizations.shared.settingsScreenTitle)
     }
 
     func buildEmailCellModel() -> InfoScreenBasicCellModel {
-        return InfoScreenBasicCellModel(type: .email, title: NSLS("INFORMATION_WRITE_TO_US_CELL_TITLE"))
+        return InfoScreenBasicCellModel(type: .email, title: TemplateAppLocalizations.shared.feedbackSendEmailTitle)
     }
 
     func buildExternalCellModels(from externalLinks: [ExternalLink]) -> [InfoScreenCellModelProtocol] {

@@ -89,18 +89,18 @@ private extension ASTWaitingScreenPresenter {
 
         switch error.code {
         case JRSDKServerAPIError.searchNoTickets.rawValue:
-            title = NSLS("JR_WAITING_ERROR_NOT_FOUND_MESSAGE_TITLE")
-            message = NSLS("JR_WAITING_ERROR_NOT_FOUND_MESSAGE")
+            title = TemplateAppLocalizations.shared.waitingNoTicketsErrorTitle
+            message = TemplateAppLocalizations.shared.waitingNoTicketsErrorMessage
         case JRSDKServerAPIError.connectionFailed.rawValue:
-            title = NSLS("JR_WAITING_ERROR_CONNECTION_ERROR_TITLE")
-            message = String(format: NSLS("JR_WAITING_ERROR_CONNECTION_ERROR"), internalCode)
+            title = TemplateAppLocalizations.shared.waitingConnectionErrorTitle
+            message = String(format: TemplateAppLocalizations.shared.waitingConnectionErrorMessage, internalCode)
         default:
-            title = NSLS("JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE_TITLE")
-            message = String(format: NSLS("JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE"), internalCode)
+            title = TemplateAppLocalizations.shared.waitingGenericErrorTitle
+            message = String(format: TemplateAppLocalizations.shared.waitingGenericErrorMessage, internalCode)
         }
 
         let showErrorAction: (() -> Void)? = { [weak self] in
-            self?.view?.showError(title: title, message: message, cancel: NSLS("JR_WAITING_ERROR_ОК_BUTTON"))
+            self?.view?.showError(title: title, message: message, cancel: TemplateAppLocalizations.shared.waitingErrorOKButtonTitle)
         }
 
         if canShowError {

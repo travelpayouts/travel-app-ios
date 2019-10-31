@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Appodeal.initialize(withApiKey: ConfigManager.shared.appodealKey, types: .interstitial)
         ASTJRC.setup()
+        AppLocalizations.setup()
 
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window

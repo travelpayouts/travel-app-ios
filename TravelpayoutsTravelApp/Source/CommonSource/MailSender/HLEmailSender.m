@@ -2,13 +2,12 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 #import <sys/utsname.h>
-#import <JRCommonUtils/JRCommonUtils.h>
-#import <HotellookKit/HotellookKit.h>
+#import <AviasalesKit/AviasalesKit.h>
 #import "BZipCompression.h"
 #import "HLEmailSender.h"
 #import "HLAlertsFabric.h"
 
-NSString * const kReportFileName = @"Technical Report.gz";
+NSString * const kReportFileName = @"Technical Report.bz2";
 
 @implementation HLEmailSender
 
@@ -44,9 +43,9 @@ NSString * const kReportFileName = @"Technical Report.gz";
                                               workFactor:BZipDefaultWorkFactor
                                                    error:&error];
 
-    [self.mailer setSubject:@"Travel app feedback"];
+    [self.mailer setSubject:TemplateAppLocalizations.shared.feedbackEmailSubject];
     [self.mailer setToRecipients:toRecipients];
-    [self.mailer addAttachmentData:techReport mimeType:@"application/zip" fileName:kReportFileName];
+    [self.mailer addAttachmentData:techReport mimeType:@"application/x-bzip2" fileName:kReportFileName];
 }
 
 + (void)showUnavailableAlertInController:(UIViewController *)controller
@@ -62,7 +61,7 @@ NSString * const kReportFileName = @"Technical Report.gz";
 
     NSMutableString *techInfo = [[NSMutableString alloc] init];
     [techInfo appendString:@"\n\n\n"];
-    [techInfo appendString:NSLS(@"EMAIL_FEEDBACK_APP_INFO_CAPTION")];
+    [techInfo appendString:TemplateAppLocalizations.shared.feedbackTechnicalInfoDescription];
     [techInfo appendFormat:@"\nDevice: %@", device];
     [techInfo appendFormat:@"\niOS version: %@", [[UIDevice currentDevice] systemVersion]];
     [techInfo appendFormat:@"\nApplication version: %@", [[NSBundle mainBundle].infoDictionary objectForKey:@"CFBundleVersion"]];

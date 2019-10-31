@@ -12,9 +12,7 @@ To track statistics and payments, please visit our affiliate network website —
 To learn more about the Travelpayouts affiliate network, please visit [Travelpayouts FAQ](https://support.travelpayouts.com/hc/en-us/articles/203955613-Commission-and-payments).
 
 ## <a name="usage"></a>How to build your own app using the template project
-
 ### 📲 Setup
-
 1. Download the latest release of template project (not beta) here: [https://github.com/travelpayouts/travel-app-ios/releases](https://github.com/travelpayouts/travel-app-ios/releases), file Source Code (zip).
 Alternatively you can clone the repository for development.
 2. Dependencies are managed via CocoaPods (cocoapods.org). It can be installed via Bundler.
@@ -41,7 +39,8 @@ Application supports iOS 10.0 and higher
 **Do not forget to replace app icons** (Template project includes simple white icons by default). To do this you will need to replace icons in ```TravelpayoutsTravelApp/AppIcon.xcassets/AppIcon.appiconset``` folder (20.png, 29.png, 40.png etc) with your own icons with same names.
 
 ### ✈️🏨 Tab selection
-If you want to remove flights or hotels search tab, change values of ```flights_enabled``` and ```hotels_enabled``` to NO in Project settings. Information tab can't be removed this way.
+1. If you want to remove flights or hotels search tab, change values of ```flights_enabled``` and ```hotels_enabled``` to NO in Project settings. Information tab can't be removed this way.
+2. You can add Car Rental tab. To do this you need to join one car rental partner program from [Travelpayouts programs](https://www.travelpayouts.com/programs). Then you will need to generate a partner link and add it to the ```TravelpayoutsTravelApp/default_config.plist``` file to parameter ```car_rental_link```.
 
 ### 🔧🌻 Color customization
 You can choose color scheme in ```ColorSchemeManager.swift``` file. Just add to ```current``` variable one of these values: BlackColorScheme() / PurpleColorScheme(). Or set CustomColorScheme() value and set up any color scheme you need in ```CustomColorScheme.swift``` file.
@@ -53,6 +52,9 @@ mainColor | Primary app color
 actionColor | Actions highlight color
 
 Fine-grained color customization can be configured in file ```ASTJRC.swift``` by overriding colors from the base class ```JRC```.
+
+### 🔧📄 Text customization
+You can change search forms titles in ```AppLocalizations.swift``` file. Uncomment and edit a variable to change corresponding search form title. Title can be localized in multuple languages if you use ```NSLocalizedString``` and add all localizations to ```Localizable.strings``` files.
 
 ### 🤑 Appodeal ads setup
 To get additional profit from ads, we've integrated Mobile Ads [Appodeal SDK](https://www.appodeal.com/) in the app. To configure it, specify the ```appodeal_key``` parameter in the ```default_config.plist``` file (get your API key by registering at [Appodeal](https://www.appodeal.com/)). Ads will appear on the waiting screens for tickets and hotels searching by default.

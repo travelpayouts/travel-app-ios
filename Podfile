@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, :deployment_target => '10.0'
+platform :ios, :deployment_target => '11.0'
 inhibit_all_warnings!
 use_frameworks!
 
@@ -37,7 +37,7 @@ def hl_host_pods
     pod 'ClusterKit/MapKit'
     pod 'PureLayout'
     pod 'PromiseKit', '~> 6.4'
-    pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', tag: '0.0.3'
+    pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
     pod "MBProgressHUD"
     pod 'SnowplowTracker', '~> 1.0.4'
 end
@@ -74,10 +74,11 @@ def shared_pods
     pod 'ReachabilitySwift'
     pod 'BZipCompression'
     pod 'ClusterKit/MapKit'
-    pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', tag: '0.0.3'
+    pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
     pod "DGCollectionViewLeftAlignFlowLayout"
     pod 'libCurlPods', git: 'https://github.com/KosyanMedia/libCurlPods.git', tag: '7.60.2'
     pod "SloppySwiper", git: 'https://github.com/glassoff/SloppySwiper.git', branch: 'aviasales'
+    pod 'UIImageViewAligned'
     hl_sdk_pods
 end
 
@@ -85,7 +86,7 @@ target 'TravelpayoutsTravelApp' do
     shared_pods
     hl_host_pods
 
-    pod 'AviasalesKit', podspec: 'https://github.com/travelpayouts/travel-app-ios/raw/6.0/AviasalesKit.podspec'
+    pod 'AviasalesKit', podspec: 'https://github.com/travelpayouts/travel-app-ios/raw/6.1/AviasalesKit.podspec'
 
     pod 'Fabric'
     pod 'Crashlytics'
@@ -97,8 +98,10 @@ target 'TravelpayoutsTravelApp' do
 end
 
 pre_install do |installer|
-    installer.analysis_result.specifications.each do |spec|
-        spec.root.static_framework = true
+    installer.analysis_result.pod_targets.each do |target|
+        if target.instance_variable_get(:@build_type) == Pod::Target::BuildType.dynamic_framework
+            target.instance_variable_set(:@build_type, Pod::Target::BuildType.static_framework)
+        end
     end
 end
 

@@ -52,7 +52,10 @@
 		CE900A0D22A5389E00330E56 /* ASTJRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE900A0C22A5389E00330E56 /* ASTJRC.swift */; };
 		CEAAD399223A80A900E7C5D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAD398223A80A900E7C5D8 /* AppDelegate.swift */; };
 		CEB0C73322B3B41E00D454C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB0C73222B3B41E00D454C8 /* GoogleService-Info.plist */; };
+		CEC723FC23214C55004A4CAE /* BrowserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC723FB23214C55004A4CAE /* BrowserVC.swift */; };
 		CECC2EC622D5F964003F3996 /* HLAlertsFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC2EC422D5F964003F3996 /* HLAlertsFabric.m */; };
+		CED20042231D42580010A8EB /* AppLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED20041231D42580010A8EB /* AppLocalizations.swift */; };
+		CED20045231D45750010A8EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED20047231D45750010A8EB /* Localizable.strings */; };
 		CEF4A84A22CBA1A90096B6C2 /* TemplateAppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4A84922CBA1A90096B6C2 /* TemplateAppConfiguration.swift */; };
 		CEFA872622C1004F00AF34A1 /* TravelpayoutsTravelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA872522C1004F00AF34A1 /* TravelpayoutsTravelAppTests.swift */; };
 /* End PBXBuildFile section */
@@ -142,8 +145,36 @@
 		CEAAD398223A80A900E7C5D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAAD3A4223A80AA00E7C5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB0C73222B3B41E00D454C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEC723FB23214C55004A4CAE /* BrowserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserVC.swift; sourceTree = "<group>"; };
 		CECC2EC422D5F964003F3996 /* HLAlertsFabric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAlertsFabric.m; sourceTree = "<group>"; };
 		CECC2EC522D5F964003F3996 /* HLAlertsFabric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAlertsFabric.h; sourceTree = "<group>"; };
+		CED20041231D42580010A8EB /* AppLocalizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalizations.swift; sourceTree = "<group>"; };
+		CED20046231D45750010A8EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20048231D45770010A8EB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CED20049231D457A0010A8EB /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CED2004A231D457B0010A8EB /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2004B231D457C0010A8EB /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2004C231D457D0010A8EB /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2004D231D457D0010A8EB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2004E231D457E0010A8EB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2004F231D457F0010A8EB /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20050231D45800010A8EB /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20051231D45810010A8EB /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20052231D45820010A8EB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20053231D45830010A8EB /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20054231D45860010A8EB /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20055231D458A0010A8EB /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20056231D458E0010A8EB /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20057231D458E0010A8EB /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20058231D458F0010A8EB /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED20059231D45900010A8EB /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CED2005A231D45920010A8EB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2005B231D45930010A8EB /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2005C231D45940010A8EB /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2005D231D45950010A8EB /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CED2005E231D45960010A8EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CEDD058023674787003E9C3A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEDD058123674788003E9C3A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEF4A84922CBA1A90096B6C2 /* TemplateAppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAppConfiguration.swift; sourceTree = "<group>"; };
 		CEFA872322C1004F00AF34A1 /* TravelpayoutsTravelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelpayoutsTravelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFA872522C1004F00AF34A1 /* TravelpayoutsTravelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelpayoutsTravelAppTests.swift; sourceTree = "<group>"; };
@@ -187,6 +218,7 @@
 			children = (
 				CE35D871229BEFE900EF8901 /* TravelpayoutsTravelApp-Bridging-Header.h */,
 				CEF4A84922CBA1A90096B6C2 /* TemplateAppConfiguration.swift */,
+				CED20041231D42580010A8EB /* AppLocalizations.swift */,
 				CE35D73022983B0300EF8901 /* ColorManagment */,
 				CE35D74022983B0300EF8901 /* CommonSource */,
 				CE35D79722983B0300EF8901 /* Extensions */,
@@ -223,6 +255,7 @@
 				CE35D75922983B0300EF8901 /* InfoScreen */,
 				CE35D87B229BF84A00EF8901 /* MailSender */,
 				CE35D77D22983B0300EF8901 /* WaitingScreen */,
+				CEC723FA23214C2E004A4CAE /* Browser */,
 			);
 			path = CommonSource;
 			sourceTree = "<group>";
@@ -356,6 +389,7 @@
 			children = (
 				CE35D8DF229C24C800EF8901 /* App.xcassets */,
 				CE35D889229BF9A900EF8901 /* InfoPlist.strings */,
+				CED20047231D45750010A8EB /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -395,6 +429,14 @@
 			path = TravelpayoutsTravelApp;
 			sourceTree = "<group>";
 		};
+		CEC723FA23214C2E004A4CAE /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				CEC723FB23214C55004A4CAE /* BrowserVC.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
 		CEFA872422C1004F00AF34A1 /* TravelpayoutsTravelAppTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,7 +469,6 @@
 				CEAAD392223A80A900E7C5D8 /* Frameworks */,
 				CEAAD393223A80A900E7C5D8 /* Resources */,
 				377106953E320ED7A46165CD /* [CP] Copy Pods Resources */,
-				6D2365DA6994667D1F4A57CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -506,6 +547,7 @@
 				th,
 				pt,
 				"pt-PT",
+				ar,
 			);
 			mainGroup = CEAAD38C223A80A900E7C5D8;
 			productRefGroup = CEAAD396223A80A900E7C5D8 /* Products */;
@@ -535,6 +577,7 @@
 				CE900A0922A52A1300330E56 /* LaunchScreen.xib in Resources */,
 				CE35D82222983B0300EF8901 /* InfoScreenVersionCell.xib in Resources */,
 				CE35D8EC229D5BFE00EF8901 /* default_config.plist in Resources */,
+				CED20045231D45750010A8EB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,23 +630,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6D2365DA6994667D1F4A57CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		900569EB1E9EA41B0BAC1A7A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -653,6 +679,8 @@
 				CE900A0D22A5389E00330E56 /* ASTJRC.swift in Sources */,
 				CE35D81822983B0300EF8901 /* InfoScreenAboutCellModel.swift in Sources */,
 				CE35D7FD22983B0300EF8901 /* BlackColorScheme.swift in Sources */,
+				CEC723FC23214C55004A4CAE /* BrowserVC.swift in Sources */,
+				CED20042231D42580010A8EB /* AppLocalizations.swift in Sources */,
 				CE35D83422983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift in Sources */,
 				CE35D881229BF84A00EF8901 /* HLMailComposeVC.m in Sources */,
 				CE35D82A22983B0300EF8901 /* ASTWaitingScreenPresenter.swift in Sources */,
@@ -715,8 +743,41 @@
 				CE35D8CA229BF9A900EF8901 /* th */,
 				CE35D8CD229BF9A900EF8901 /* pt */,
 				CE35D8D0229BF9A900EF8901 /* pt-PT */,
+				CEDD058023674787003E9C3A /* ar */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CED20047231D45750010A8EB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED20046231D45750010A8EB /* en */,
+				CED20048231D45770010A8EB /* zh-Hans */,
+				CED20049231D457A0010A8EB /* zh-Hant */,
+				CED2004A231D457B0010A8EB /* da */,
+				CED2004B231D457C0010A8EB /* fi */,
+				CED2004C231D457D0010A8EB /* nl */,
+				CED2004D231D457D0010A8EB /* fr */,
+				CED2004E231D457E0010A8EB /* de */,
+				CED2004F231D457F0010A8EB /* el */,
+				CED20050231D45800010A8EB /* id */,
+				CED20051231D45810010A8EB /* it */,
+				CED20052231D45820010A8EB /* ja */,
+				CED20053231D45830010A8EB /* ko */,
+				CED20054231D45860010A8EB /* ms */,
+				CED20055231D458A0010A8EB /* nb */,
+				CED20056231D458E0010A8EB /* pl */,
+				CED20057231D458E0010A8EB /* pt */,
+				CED20058231D458F0010A8EB /* ru */,
+				CED20059231D45900010A8EB /* pt-PT */,
+				CED2005A231D45920010A8EB /* es */,
+				CED2005B231D45930010A8EB /* th */,
+				CED2005C231D45940010A8EB /* sv */,
+				CED2005D231D45950010A8EB /* tr */,
+				CED2005E231D45960010A8EB /* vi */,
+				CEDD058123674788003E9C3A /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -772,7 +833,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -826,7 +887,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -841,9 +902,6 @@
 			baseConfigurationReference = 1945C76EA32DFD29E9AA3D75 /* Pods-TravelpayoutsTravelApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -851,7 +909,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelpayoutsTravelApp/Source/TravelpayoutsTravelApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -863,9 +920,6 @@
 			baseConfigurationReference = D553565D1BD04C2ACA348EEA /* Pods-TravelpayoutsTravelApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -873,7 +927,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelpayoutsTravelApp/Source/TravelpayoutsTravelApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -887,9 +940,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TravelpayoutsTravelAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -900,7 +950,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoapods-test.TravelpayoutsTravelAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelpayoutsTravelApp.app/TravelpayoutsTravelApp";
@@ -914,9 +963,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TravelpayoutsTravelAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -927,7 +973,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoapods-test.TravelpayoutsTravelAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelpayoutsTravelApp.app/TravelpayoutsTravelApp";

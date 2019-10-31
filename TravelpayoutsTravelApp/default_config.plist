@@ -25,6 +25,8 @@
 	</dict>
 	<key>feedback_email</key>
 	<string></string>
+	<key>car_rental_link</key>
+	<string></string>
 	<key>itunes_link</key>
 	<string></string>
 	<key>search_params</key>
