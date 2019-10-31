@@ -1,6 +1,6 @@
 Travelpayouts Travel App iOS
 =================
-[![Travis](https://img.shields.io/travis/travelpayouts/travel-app-ios/master.svg)](https://travis-ci.com/travelpayouts/travel-app-ios)
+[![Build Status](https://travis-ci.com/travelpayouts/travel-app-ios.svg?branch=master)](https://travis-ci.com/travelpayouts/travel-app-ios)
 #### README in [English](https://github.com/travelpayouts/travel-app-ios/blob/master/README.md)
 ## Описание
 [Travelpayouts](https://www.travelpayouts.com) Travelpayouts Travel App iOS — шаблон приложения для поиска авиабилетов и отелей. Когда пользователь покупает билет или бронирует отель, вы получаете вознаграждение. При разработке официальных приложений Aviasales и Hotellook используется та же самая кодовая база.

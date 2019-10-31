@@ -1,6 +1,6 @@
 Travelpayouts Travel App iOS
 =================
-[![Travis](https://img.shields.io/travis/travelpayouts/travel-app-ios/master.svg)](https://travis-ci.com/travelpayouts/travel-app-ios)
+[![Build Status](https://travis-ci.com/travelpayouts/travel-app-ios.svg?branch=master)](https://travis-ci.com/travelpayouts/travel-app-ios)
 #### Руководство [по-русски](https://github.com/travelpayouts/travel-app-ios/blob/master/README_RU.md)
 ## Description
 [Travelpayouts](https://www.travelpayouts.com) Travel App iOS is an app template for flights and hotels search. When your user books flight or hotel, you get paid. Aviasales, Jetradar and Hotellook official apps are based on the same code.
