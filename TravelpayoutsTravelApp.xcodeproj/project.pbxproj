@@ -52,7 +52,6 @@
 		CE900A0D22A5389E00330E56 /* ASTJRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE900A0C22A5389E00330E56 /* ASTJRC.swift */; };
 		CEAAD399223A80A900E7C5D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAD398223A80A900E7C5D8 /* AppDelegate.swift */; };
 		CEB0C73322B3B41E00D454C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEB0C73222B3B41E00D454C8 /* GoogleService-Info.plist */; };
-		CEC723FC23214C55004A4CAE /* BrowserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC723FB23214C55004A4CAE /* BrowserVC.swift */; };
 		CECC2EC622D5F964003F3996 /* HLAlertsFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC2EC422D5F964003F3996 /* HLAlertsFabric.m */; };
 		CED20042231D42580010A8EB /* AppLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED20041231D42580010A8EB /* AppLocalizations.swift */; };
 		CED20045231D45750010A8EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED20047231D45750010A8EB /* Localizable.strings */; };
@@ -145,7 +144,6 @@
 		CEAAD398223A80A900E7C5D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAAD3A4223A80AA00E7C5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB0C73222B3B41E00D454C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CEC723FB23214C55004A4CAE /* BrowserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserVC.swift; sourceTree = "<group>"; };
 		CECC2EC422D5F964003F3996 /* HLAlertsFabric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLAlertsFabric.m; sourceTree = "<group>"; };
 		CECC2EC522D5F964003F3996 /* HLAlertsFabric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAlertsFabric.h; sourceTree = "<group>"; };
 		CED20041231D42580010A8EB /* AppLocalizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalizations.swift; sourceTree = "<group>"; };
@@ -255,7 +253,6 @@
 				CE35D75922983B0300EF8901 /* InfoScreen */,
 				CE35D87B229BF84A00EF8901 /* MailSender */,
 				CE35D77D22983B0300EF8901 /* WaitingScreen */,
-				CEC723FA23214C2E004A4CAE /* Browser */,
 			);
 			path = CommonSource;
 			sourceTree = "<group>";
@@ -427,14 +424,6 @@
 				CE35D72F22983B0300EF8901 /* Source */,
 			);
 			path = TravelpayoutsTravelApp;
-			sourceTree = "<group>";
-		};
-		CEC723FA23214C2E004A4CAE /* Browser */ = {
-			isa = PBXGroup;
-			children = (
-				CEC723FB23214C55004A4CAE /* BrowserVC.swift */,
-			);
-			path = Browser;
 			sourceTree = "<group>";
 		};
 		CEFA872422C1004F00AF34A1 /* TravelpayoutsTravelAppTests */ = {
@@ -679,7 +668,6 @@
 				CE900A0D22A5389E00330E56 /* ASTJRC.swift in Sources */,
 				CE35D81822983B0300EF8901 /* InfoScreenAboutCellModel.swift in Sources */,
 				CE35D7FD22983B0300EF8901 /* BlackColorScheme.swift in Sources */,
-				CEC723FC23214C55004A4CAE /* BrowserVC.swift in Sources */,
 				CED20042231D42580010A8EB /* AppLocalizations.swift in Sources */,
 				CE35D83422983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift in Sources */,
 				CE35D881229BF84A00EF8901 /* HLMailComposeVC.m in Sources */,

@@ -1,7 +1,7 @@
 language: objective-c
-osx_image: xcode11.1
+osx_image: xcode11.3
 
-rvm: 2.3.7
+rvm: 2.4.3
 before_install:
     - gem install bundler -v 2.0.2
     - bundle install --path vendor/bundle
@@ -17,4 +17,4 @@ xcode_sdk:
     - iphonesimulator
 
 script:
-   - xcodebuild -workspace TravelpayoutsTravelApp.xcworkspace -scheme TravelpayoutsTravelApp -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.1,name=iPhone 8" COMPILER_INDEX_STORE_ENABLE=NO build test | bundle exec xcpretty
+   - xcodebuild -workspace TravelpayoutsTravelApp.xcworkspace -scheme TravelpayoutsTravelApp -sdk iphonesimulator -destination "platform=iOS Simulator,OS=13.3,name=iPhone 8" COMPILER_INDEX_STORE_ENABLE=NO build test | bundle exec xcpretty

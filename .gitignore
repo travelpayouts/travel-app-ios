@@ -18,3 +18,4 @@ xcuserdata
 *.xcscmblueprint
 
 vendor/bundle
+vendor/AviasalesKit

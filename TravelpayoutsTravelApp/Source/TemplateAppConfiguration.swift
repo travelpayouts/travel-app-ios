@@ -3,6 +3,7 @@
 
 import Foundation
 import AviasalesKit
+import ASTemplateConfiguration
 
 class TemplateAppConfiguration: TemplateAppConfigurationProtocol {
 
@@ -43,31 +44,13 @@ private class AdditionalTabBarItemsFactory: NSObject, AdditionalTabBarItemsFacto
     let infoItem = TabBarViewControllerTabItem(type: .mainViewControllerTabItemTypeCustom,
                                                title: TemplateAppLocalizations.shared.informationTabTitle,
                                                icon: #imageLiteral(resourceName: "info_icon"))
-    let carRentalItem = TabBarViewControllerTabItem(type: .mainViewControllerTabItemTypeCustom2,
-                                                    title: TemplateAppLocalizations.shared.carRentalTabTitle,
-                                                    icon: #imageLiteral(resourceName: "car_rental_icon"))
-
-    var carRentalRequest: URLRequest? = {
-        let urlString = ConfigManager.shared.carRentalLink
-        guard !urlString.isEmpty else {
-            return nil
-        }
-
-        let url = URL(string: urlString) ?? URL(string: "http://travelpayouts.com")!
-        return URLRequest(url: url)
-    }()
 
     func additionalTabItems() -> [JRTabBarViewControllerTabItemProtocol] {
-        if carRentalRequest != nil {
-            return [carRentalItem, infoItem]
-        }
         return [infoItem]
     }
 
     func sceneForTabWithItemType(_ type: JRTabBarViewControllerTabItemType) -> JRScene {
         switch (type) {
-        case .mainViewControllerTabItemTypeCustom2:
-            return BrowserVC.scene(request: carRentalRequest!, parentRouter: JRMainRouter.sharedInstance())
         case .mainViewControllerTabItemTypeCustom:
             fallthrough
         default:

@@ -3,6 +3,7 @@
 
 import Foundation
 import AviasalesKit
+import ASTemplateConfiguration
 
 class AppLocalizations: TemplateAppLocalizations {
 

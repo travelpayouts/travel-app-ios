@@ -2,6 +2,7 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 #import <AviasalesKit/AviasalesKit.h>
+#import <ASTemplateConfiguration/ASTemplateConfiguration.h>
 #import "HLAlertsFabric.h"
 
 @implementation HLAlertsFabric

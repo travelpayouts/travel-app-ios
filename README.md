@@ -19,10 +19,11 @@ Alternatively you can clone the repository for development.
 The following installation commands should be executed in the project folder (unpacked zip archive or cloned repository):
   ```bash
   sudo gem install bundler
-  bundle install --path vendor/bundle
-  pod install --repo-update
+  bundle install
+  bundle exec pod install --repo-update
   ```
-  **Use the ```TravelpayoutsTravelApp.xcworkspace``` to work with your project**.
+**Use the ```TravelpayoutsTravelApp.xcworkspace``` to work with your project**.
+
 3. Add your partner's token and marker in ```TravelpayoutsTravelApp/default_config.plist``` file to parameters ```partner_marker``` and ```api_token```.
 You can get the partner marker and API token on our website: [Travelpayouts](https://travelpayouts.com/).
 4. AppStore app publishing requires unique app identifier (bundle id). It can be configured in Xcode.

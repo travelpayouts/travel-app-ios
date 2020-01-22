@@ -4,6 +4,7 @@
 import UIKit
 import AviasalesKit
 import Appodeal
+import ASTemplateConfiguration
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

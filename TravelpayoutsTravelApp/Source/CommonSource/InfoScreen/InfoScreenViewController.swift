@@ -4,7 +4,7 @@
 import UIKit
 import AviasalesKit
 
-class InfoScreenViewController: UIViewController, InfoScreenIconImageViewFiveTimesTapHandler, JRSceneViewControllerProtocol {
+class InfoScreenViewController: JRViewController, InfoScreenIconImageViewFiveTimesTapHandler, JRSceneViewControllerProtocol {
 
     var router: JRRouterProtocol!
     var infoScreenRouter: InfoScreenRouter {
@@ -23,6 +23,10 @@ class InfoScreenViewController: UIViewController, InfoScreenIconImageViewFiveTim
         let viewController = InfoScreenViewController()
         viewController.router = router
         return JRBaseScene(viewController: viewController, router: router, containerViewController: nil)
+    }
+
+    override class func bundleForNib() -> Bundle? {
+        return Bundle(for: Self.self)
     }
 
     // MARK: - Lifecycle

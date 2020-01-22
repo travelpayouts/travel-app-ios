@@ -6,7 +6,7 @@ use_frameworks!
 
 def hl_sdk_pods
     pod 'Alamofire'
-    pod "KeychainSwift"
+    pod "KeychainSwift", '17.0.0'
     pod "SwiftProtobuf", '1.2.0'
 end
 
@@ -17,8 +17,8 @@ def hl_shared_pods
 end
 
 def hl_ui_pods
-    pod 'Neon', git: 'https://github.com/MontakOleg/Neon.git', commit: '3f32f7a9276732dfa28c5e3886f2f95e76aa60c5'
-    pod 'UIColor+Hex', git: 'https://github.com/MontakOleg/UIColor-Hex.git', commit: 'df1248c06c11be7c67b7dd3227bff1113112e823'
+    pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3f32f7a9276732dfa28c5e3886f2f95e76aa60c5'
+    pod 'UIColor+Hex', git: 'https://github.com/KosyanMedia/UIColor-Hex.git', commit: 'df1248c06c11be7c67b7dd3227bff1113112e823'
     pod 'Smartling.i18n'
     pod 'SDWebImage'
 end
@@ -31,9 +31,7 @@ def hl_host_pods
     pod 'UIView+Shake'
     pod 'COSTouchVisualizer'
     pod 'BZipCompression'
-    pod 'ReachabilitySwift'
-    pod 'FBSDKCoreKit', '~> 4.35.0'
-    pod 'FBSDKShareKit', '~> 4.35.0'
+    pod 'ReachabilitySwift', '~> 4.3'
     pod 'ClusterKit/MapKit'
     pod 'PureLayout'
     pod 'PromiseKit', '~> 6.4'
@@ -43,11 +41,11 @@ def hl_host_pods
 end
 
 def magical_record
-    pod 'MagicalRecord', :git => 'https://github.com/stury/MagicalRecord.git', commit: '496e74838742fd5ea44dbafdfbf844ac998eeae4'
+    pod 'MagicalRecord', git: 'https://github.com/magicalpanda/MagicalRecord.git', tag: 'v2.4.0'
 end
 
 def shared_pods
-    pod 'AppsFlyerFramework'
+    pod 'AppsFlyerFramework', '~> 4.10'
     pod 'Crashlytics'
     pod 'Flurry-iOS-SDK/FlurrySDK'
     pod 'GoogleConversionTracking'
@@ -64,19 +62,17 @@ def shared_pods
     pod "YYKeyboardManager"
     pod "JVFloatLabeledTextField"
     pod "PhoneNumberKit"
-    pod "1PasswordExtension"
     pod "UIDevice-Hardware"
     pod "DynamicBlurView"
     pod "AutoCoding"
     pod "PureLayout"
-    pod 'FBSDKCoreKit', '~> 4.35.0'
     pod 'Amplitude-iOS'
-    pod 'ReachabilitySwift'
+    pod 'ReachabilitySwift', '~> 4.3'
     pod 'BZipCompression'
     pod 'ClusterKit/MapKit'
     pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
     pod "DGCollectionViewLeftAlignFlowLayout"
-    pod 'libCurlPods', git: 'https://github.com/KosyanMedia/libCurlPods.git', tag: '7.60.2'
+    pod 'libCurlPods', git: 'https://github.com/KosyanMedia/libCurlPods.git', tag: '7.60.3'
     pod "SloppySwiper", git: 'https://github.com/glassoff/SloppySwiper.git', branch: 'aviasales'
     pod 'UIImageViewAligned'
     hl_sdk_pods
@@ -86,11 +82,11 @@ target 'TravelpayoutsTravelApp' do
     shared_pods
     hl_host_pods
 
-    pod 'AviasalesKit', podspec: 'https://github.com/travelpayouts/travel-app-ios/raw/6.1/AviasalesKit.podspec'
+    pod 'AviasalesKit', podspec: 'https://github.com/travelpayouts/travel-app-ios/raw/6.2/AviasalesKit.podspec'
 
     pod 'Fabric'
     pod 'Crashlytics'
-    pod 'Appodeal/Interstitial', '2.4.10'
+    pod 'Appodeal/Interstitial', '2.5.14'
 
     target 'TravelpayoutsTravelAppTests' do
         inherit! :search_paths

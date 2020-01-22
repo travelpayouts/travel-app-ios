@@ -19,7 +19,17 @@ class InfoScreenRouter: JRBaseRouter {
 
     func showSettingsViewController() {
         let scene = SettingsScene.instantiateScene(fromRouter: self)
-        presentSceneViewController(scene.containerViewController)
+
+        if is_iPad() {
+            let navigationController = JRNavigationController(rootViewController: scene.viewController)
+            let height = UIScreen.main.bounds.size.height
+            let size = CGSize(width: 600, height: 700)
+            let params = JRBottomDrawerPresentationParams(height: height, sizeInPopover: size, sourceView: nil)
+            params.permittedArrowDirections = .unknown
+            self.viewController.presentInBottomDrawer(navigationController, presentationParams: params, animated: true, completion: nil)
+        } else {
+            self.viewController.present(scene.containerViewController, animated: true)
+        }
     }
 
     func openEmailSender(address: String) {
@@ -39,24 +49,13 @@ class InfoScreenRouter: JRBaseRouter {
 
 extension InfoScreenRouter: JRCurrencyPickerViewControllerDelegate {
 
-    func currencyPickerDidSelectCurrency() {
+    func currencyPickerViewController(_ viewController: JRCurrencyPickerViewControllerProtocol, didSelectCurrency currency: JRSDKCurrency) {
         returnToCurrentViewController()
     }
 
 }
 
 private extension InfoScreenRouter {
-
-    func presentSceneViewController(_ viewController: UIViewController) {
-        if is_iPad() {
-            let height = UIScreen.main.bounds.size.height
-            let size = CGSize(width: 600, height: 700)
-            let params = JRBottomDrawerPresentationParams(height: height, sizeInPopover: size, sourceView: nil)
-            self.viewController.presentInBottomDrawer(viewController, presentationParams: params, animated: true, completion: nil)
-        } else {
-            self.viewController.present(viewController, animated: true)
-        }
-    }
 
     func returnToCurrentViewController() {
         viewController.dismiss(animated: true)

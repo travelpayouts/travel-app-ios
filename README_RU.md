@@ -4,8 +4,11 @@ Travelpayouts Travel App iOS
 #### README in [English](https://github.com/travelpayouts/travel-app-ios/blob/master/README.md)
 ## Описание
 [Travelpayouts](https://www.travelpayouts.com) Travelpayouts Travel App iOS — шаблон приложения для поиска авиабилетов и отелей. Когда пользователь покупает билет или бронирует отель, вы получаете вознаграждение. При разработке официальных приложений Aviasales и Hotellook используется та же самая кодовая база.
+
 Вы можете использовать этот шаблон как основу для своего приложения, либо же просто сделать конфигурацию основных параметров (название, цветовая схема, иконка и др.) и использовать как есть.
+
 Чтобы отслеживать выплаты, посетите нашу партнерскую сеть — [Travelpayouts.com](https://www.travelpayouts.com/).
+
 Узнайте подробнее о доходах в [Travelpayouts FAQ](https://support.travelpayouts.com/hc/ru/articles/203955613-Комиссия-и-выплаты).
 
 ## <a name="usage"></a>Использование шаблонного проекта
@@ -14,11 +17,11 @@ Travelpayouts Travel App iOS
 Либо клонируйте репозиторий, чтобы вести локальную разработку.
 2. Для управления зависимостями используется CocoaPods (cocoapods.org). Установите его, если требуется, через Bundler.
 Команды установки необходимо выполнять в каталоге проекта (распакованный zip архив, или клонированный репозиторий)
-```bash
-sudo gem install bundler
-bundle install --path vendor/bundle
-pod install --repo-update
-```
+  ```bash
+  sudo gem install bundler
+  bundle install
+  bunble exec pod install --repo-update
+  ```
 
 **После этого для работы с проектом используйте файл ```TravelpayoutsTravelApp.xcworkspace```**.
 

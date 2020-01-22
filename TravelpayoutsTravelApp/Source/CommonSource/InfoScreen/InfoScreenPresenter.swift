@@ -3,6 +3,7 @@
 
 import Foundation
 import AviasalesKit
+import ASTemplateConfiguration
 
 protocol InfoScreenViewProtocol: class {
     func set(title: String)
