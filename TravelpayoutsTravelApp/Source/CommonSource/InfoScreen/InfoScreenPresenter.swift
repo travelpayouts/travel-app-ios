@@ -5,7 +5,7 @@ import Foundation
 import AviasalesKit
 import ASTemplateConfiguration
 
-protocol InfoScreenViewProtocol: class {
+protocol InfoScreenViewProtocol: AnyObject {
     func set(title: String)
     func set(cellModels: [InfoScreenCellModelProtocol])
     func open(url: URL)
@@ -28,7 +28,8 @@ class InfoScreenPresenter {
             .addObserver(forName: .init(kJRUserSettingsDidChangeCurrencyNotificationName),
                          object: nil,
                          queue: .main) { [weak self] _ in
-                            self?.update() }
+                self?.update()
+            }
     }
 
     deinit {
@@ -46,14 +47,14 @@ class InfoScreenPresenter {
 
     func select(cellModel: InfoScreenCellModelProtocol) {
         switch cellModel.type {
-        case .settings:
-            view?.showSettingsScreen()
-        case .email:
-            view?.sendEmail(address: ConfigManager.shared.feedbackEmail)
-        case .external:
-            openURL(from: cellModel as! InfoScreenExtrnalCellModel)
-        case .about, .rate, .version:
-            return
+            case .settings:
+                view?.showSettingsScreen()
+            case .email:
+                view?.sendEmail(address: ConfigManager.shared.feedbackEmail)
+            case .external:
+                openURL(from: cellModel as! InfoScreenExtrnalCellModel)
+            case .about, .rate, .version:
+                return
         }
     }
 

@@ -19,7 +19,7 @@ class TemplateAppConfiguration: TemplateAppConfigurationProtocol {
     }
 
     func createWaitingScreen(with searchInfo: JRSDKSearchInfo, searchSession: JRSearchSession, delegate: JRWaitingScreenDelegate, router: JRRouterProtocol) -> JRViewController {
-        return ASTWaitingScreenViewController(searchInfo: searchInfo, searchSession: searchSession, delegate: delegate, router: router)
+        return TemplateAppWaitingScreenViewController(searchInfo: searchInfo, searchSession: searchSession, delegate: delegate, router: router, adsManager: AppodealAdsManager())
     }
 
     func additionalTabBarItemsFactory() -> AdditionalTabBarItemsFactoryProtocol? {
@@ -30,6 +30,17 @@ class TemplateAppConfiguration: TemplateAppConfigurationProtocol {
         return appLastUsedSearchInfoStorage
     }
 
+    func ticketsSearchFormBackgroundImage() -> UIImage? {
+        nil
+    }
+
+    func hotelsSearchFormBackgroundImage() -> UIImage? {
+        nil
+    }
+
+    func enableSettingsButtonOnSearchForms() -> Bool {
+        false
+    }
 }
 
 private extension TemplateAppConfiguration {
@@ -37,7 +48,6 @@ private extension TemplateAppConfiguration {
     private var appDelegate: AppDelegate {
         return UIApplication.shared.delegate as! AppDelegate
     }
-
 }
 
 private class AdditionalTabBarItemsFactory: NSObject, AdditionalTabBarItemsFactoryProtocol {
@@ -50,11 +60,11 @@ private class AdditionalTabBarItemsFactory: NSObject, AdditionalTabBarItemsFacto
     }
 
     func sceneForTabWithItemType(_ type: JRTabBarViewControllerTabItemType) -> JRScene {
-        switch (type) {
-        case .mainViewControllerTabItemTypeCustom:
-            fallthrough
-        default:
-            return InfoScreenViewController.scene(parentRouter: JRMainRouter.sharedInstance())
+        switch type {
+            case .mainViewControllerTabItemTypeCustom:
+                fallthrough
+            default:
+                return InfoScreenViewController.scene(parentRouter: JRMainRouter.sharedInstance())
         }
     }
 }
@@ -71,5 +81,4 @@ private class TabBarViewControllerTabItem: NSObject, JRTabBarViewControllerTabIt
         self.title = title
         self.icon = icon
     }
-
 }

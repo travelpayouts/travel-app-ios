@@ -72,7 +72,7 @@ private extension InfoScreenViewController {
 
     func buildRateCell(cellModel: InfoScreenRateCellModel) -> InfoScreenRateCell {
         let cell = InfoScreenRateCell.fromMainBundleNib()
-        cell.setup(cellModel: cellModel as InfoScreenRateCellProtocol) { [weak self] (_) in
+        cell.setup(cellModel: cellModel as InfoScreenRateCellProtocol) { [weak self] _ in
             self?.presenter.rate()
         }
         return cell
@@ -148,18 +148,18 @@ extension InfoScreenViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellModel = cellModels[indexPath.row]
         switch cellModel.type {
-        case .about:
-            return buildAboutCell(cellModel: cellModel as! InfoScreenAboutCellModel)
-        case .rate:
-            return buildRateCell(cellModel: cellModel as! InfoScreenRateCellModel)
-        case .settings:
-            return buildBasicCell(cellModel: cellModel as! InfoScreenBasicCellModel)
-        case .email:
-            return buildBasicCell(cellModel: cellModel as! InfoScreenBasicCellModel)
-        case .external:
-            return buildExternalCell(cellModel: cellModel as! InfoScreenExtrnalCellModel)
-        case .version:
-            return buildVersionCell(cellModel: cellModel as! InfoScreenVersionCellModel)
+            case .about:
+                return buildAboutCell(cellModel: cellModel as! InfoScreenAboutCellModel)
+            case .rate:
+                return buildRateCell(cellModel: cellModel as! InfoScreenRateCellModel)
+            case .settings:
+                return buildBasicCell(cellModel: cellModel as! InfoScreenBasicCellModel)
+            case .email:
+                return buildBasicCell(cellModel: cellModel as! InfoScreenBasicCellModel)
+            case .external:
+                return buildExternalCell(cellModel: cellModel as! InfoScreenExtrnalCellModel)
+            case .version:
+                return buildVersionCell(cellModel: cellModel as! InfoScreenVersionCellModel)
         }
     }
 }

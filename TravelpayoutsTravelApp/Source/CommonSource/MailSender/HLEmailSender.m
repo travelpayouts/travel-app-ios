@@ -3,6 +3,7 @@
 
 #import <sys/utsname.h>
 #import <AviasalesKit/AviasalesKit.h>
+#import <HotellookSDK/HotellookSDK-Swift.h>
 #import <ASTemplateConfiguration/ASTemplateConfiguration.h>
 #import "BZipCompression.h"
 #import "HLEmailSender.h"

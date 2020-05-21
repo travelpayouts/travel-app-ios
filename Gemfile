@@ -3,6 +3,6 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem "cocoapods", "1.8.1"
+gem "cocoapods", "1.9.1"
 gem "xcpretty"
 gem "fastlane"

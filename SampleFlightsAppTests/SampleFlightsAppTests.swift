@@ -1,11 +1,11 @@
-// Copyright 2019 Go Travel Un Limited
+// Copyright 2020 Go Travel Un Limited
 // This code is distributed under the terms and conditions of the MIT license.
 
 import XCTest
 import AviasalesSDK
 import AviasalesKit
 
-class TravelpayoutsTravelAppTests: XCTestCase {
+class SampleFlightsAppTests: XCTestCase {
 
     func testMetadataHeader() {
         let metadata = AviasalesSDK.sharedInstance().serviceLocator.metadataBuilder.metadata(withSource: nil)

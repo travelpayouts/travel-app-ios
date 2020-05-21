@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460381E7241B9F9300089A52 /* AppodealAdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460381E6241B9F9300089A52 /* AppodealAdsManager.swift */; };
+		4693D2C7240FD3CF0036AACE /* TemplateAppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4693D2C6240FD3CF0036AACE /* TemplateAppConfiguration.swift */; };
+		4693D2CA240FD8760036AACE /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE35D8DF229C24C800EF8901 /* App.xcassets */; };
+		46DC5E372424CDDF00C110E1 /* default_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46DC5E362424CDDF00C110E1 /* default_config.plist */; };
 		7573681B398C6D04C4CD3CAC /* Pods_TravelpayoutsTravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AE253B4FF377B2B6A383 /* Pods_TravelpayoutsTravelApp.framework */; };
-		A381469BFF2268443A772106 /* Pods_TravelpayoutsTravelAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8707560D570FD4164EED738 /* Pods_TravelpayoutsTravelAppTests.framework */; };
+		BDC87C5D2F916B0E16727839 /* Pods_SampleFlightsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B0F2337CCDD8336ED3B267 /* Pods_SampleFlightsApp.framework */; };
+		CE19A3C52434F39100A30320 /* SampleFlightsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19A3C42434F39100A30320 /* SampleFlightsAppTests.swift */; };
 		CE35D7FA22983B0300EF8901 /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D73222983B0300EF8901 /* ColorSchemeManager.swift */; };
 		CE35D7FB22983B0300EF8901 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D73422983B0300EF8901 /* ColorScheme.swift */; };
 		CE35D7FD22983B0300EF8901 /* BlackColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D73622983B0300EF8901 /* BlackColorScheme.swift */; };
@@ -31,20 +36,12 @@
 		CE35D82122983B0300EF8901 /* InfoScreenRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35D76C22983B0300EF8901 /* InfoScreenRateCell.xib */; };
 		CE35D82222983B0300EF8901 /* InfoScreenVersionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35D76E22983B0300EF8901 /* InfoScreenVersionCell.xib */; };
 		CE35D82322983B0300EF8901 /* InfoScreenVersionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D76F22983B0300EF8901 /* InfoScreenVersionCell.swift */; };
-		CE35D82822983B0300EF8901 /* ASTWaitingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D77E22983B0300EF8901 /* ASTWaitingScreenViewController.swift */; };
-		CE35D82922983B0300EF8901 /* ASTWaitingScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35D77F22983B0300EF8901 /* ASTWaitingScreenViewController.xib */; };
-		CE35D82A22983B0300EF8901 /* ASTWaitingScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D78022983B0300EF8901 /* ASTWaitingScreenPresenter.swift */; };
-		CE35D82B22983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D78322983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.swift */; };
-		CE35D82C22983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35D78422983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.xib */; };
 		CE35D83422983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D79922983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift */; };
 		CE35D83B22983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D7A022983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift */; };
-		CE35D83F22983B0300EF8901 /* UIView+RTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D7A422983B0300EF8901 /* UIView+RTL.swift */; };
 		CE35D84222983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D7A722983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift */; };
 		CE35D880229BF84A00EF8901 /* HLEmailSender.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D87E229BF84A00EF8901 /* HLEmailSender.m */; };
 		CE35D881229BF84A00EF8901 /* HLMailComposeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D87F229BF84A00EF8901 /* HLMailComposeVC.m */; };
 		CE35D8D3229BF9A900EF8901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE35D889229BF9A900EF8901 /* InfoPlist.strings */; };
-		CE35D8E0229C24C800EF8901 /* App.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE35D8DF229C24C800EF8901 /* App.xcassets */; };
-		CE35D8EC229D5BFE00EF8901 /* default_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE35D8EB229D5BFE00EF8901 /* default_config.plist */; };
 		CE35D8EE229D5CC400EF8901 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE35D8ED229D5CC400EF8901 /* AppIcon.xcassets */; };
 		CE900A0722A153F400330E56 /* InfoScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE900A0622A153F400330E56 /* InfoScreenRouter.swift */; };
 		CE900A0922A52A1300330E56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE900A0822A52A1300330E56 /* LaunchScreen.xib */; };
@@ -55,11 +52,23 @@
 		CECC2EC622D5F964003F3996 /* HLAlertsFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC2EC422D5F964003F3996 /* HLAlertsFabric.m */; };
 		CED20042231D42580010A8EB /* AppLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED20041231D42580010A8EB /* AppLocalizations.swift */; };
 		CED20045231D45750010A8EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED20047231D45750010A8EB /* Localizable.strings */; };
-		CEF4A84A22CBA1A90096B6C2 /* TemplateAppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4A84922CBA1A90096B6C2 /* TemplateAppConfiguration.swift */; };
 		CEFA872622C1004F00AF34A1 /* TravelpayoutsTravelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA872522C1004F00AF34A1 /* TravelpayoutsTravelAppTests.swift */; };
+		CEFB9C71242A3A420027A662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB9C70242A3A420027A662 /* AppDelegate.swift */; };
+		CEFB9C75242A3A420027A662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB9C74242A3A420027A662 /* ViewController.swift */; };
+		CEFB9C7A242A3A460027A662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFB9C79242A3A460027A662 /* Assets.xcassets */; };
+		CEFB9C7D242A3A460027A662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFB9C7B242A3A460027A662 /* LaunchScreen.storyboard */; };
+		D6C6199E8AC7654A80ACF647 /* Pods_TravelpayoutsTravelAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1463DACF1B78B7A3C25503A /* Pods_TravelpayoutsTravelAppTests.framework */; };
+		FAA3C5CF26400707DA650171 /* Pods_SampleFlightsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0F7463689836B28AC66833 /* Pods_SampleFlightsAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE19A3C72434F39100A30320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEAAD38D223A80A900E7C5D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEFB9C6D242A3A420027A662;
+			remoteInfo = SampleFlightsApp;
+		};
 		CEFA872822C1004F00AF34A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEAAD38D223A80A900E7C5D8 /* Project object */;
@@ -70,9 +79,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1945C76EA32DFD29E9AA3D75 /* Pods-TravelpayoutsTravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp.debug.xcconfig"; sourceTree = "<group>"; };
-		8A6EB59913CD62EC2FFE0045 /* Pods-TravelpayoutsTravelAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelAppTests/Pods-TravelpayoutsTravelAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		07AB4526C4EC09EEA49ED477 /* Pods-LebedevAppUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LebedevAppUI.debug.xcconfig"; path = "Target Support Files/Pods-LebedevAppUI/Pods-LebedevAppUI.debug.xcconfig"; sourceTree = "<group>"; };
+		09FA86A706F9E1C98E3C707F /* Pods-TravelpayoutsTravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelApp.debug.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0B55F0ED1CDC9C2AA4BEBAFD /* Pods-TravelpayoutsTravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp.release.xcconfig"; sourceTree = "<group>"; };
+		460381E6241B9F9300089A52 /* AppodealAdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppodealAdsManager.swift; sourceTree = "<group>"; };
+		4693D2C6240FD3CF0036AACE /* TemplateAppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAppConfiguration.swift; sourceTree = "<group>"; };
+		46DC5E362424CDDF00C110E1 /* default_config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = default_config.plist; sourceTree = "<group>"; };
+		6CA826E536DF850222CAE0B4 /* Pods-TravelpayoutsTravelAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelAppTests/Pods-TravelpayoutsTravelAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72B0F2337CCDD8336ED3B267 /* Pods_SampleFlightsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleFlightsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D39EFCCC2BC4707BAC3E8E /* Pods-LebedevAppUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LebedevAppUI.release.xcconfig"; path = "Target Support Files/Pods-LebedevAppUI/Pods-LebedevAppUI.release.xcconfig"; sourceTree = "<group>"; };
+		86C9E86F4969BD02DE842BF9 /* Pods-LebedevApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LebedevApp.release.xcconfig"; path = "Target Support Files/Pods-LebedevApp/Pods-LebedevApp.release.xcconfig"; sourceTree = "<group>"; };
+		92595E2F54527F0AB6C27445 /* Pods-SampleFlightsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleFlightsAppTests.release.xcconfig"; path = "Target Support Files/Pods-SampleFlightsAppTests/Pods-SampleFlightsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3EB6DFA7BF842C3EA35D900 /* Pods-TravelpayoutsTravelAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelAppTests.release.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelAppTests/Pods-TravelpayoutsTravelAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B098AE253B4FF377B2B6A383 /* Pods_TravelpayoutsTravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelpayoutsTravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63170E84EE681E83D34DE08 /* Pods-LebedevApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LebedevApp.debug.xcconfig"; path = "Target Support Files/Pods-LebedevApp/Pods-LebedevApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2E270BEA919A4FA567A69E /* Pods-SampleFlightsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleFlightsApp.release.xcconfig"; path = "Target Support Files/Pods-SampleFlightsApp/Pods-SampleFlightsApp.release.xcconfig"; sourceTree = "<group>"; };
+		BACD3BDDB685208E8A7EF1A6 /* Pods_LebedevApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LebedevApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE19A3C22434F39100A30320 /* SampleFlightsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFlightsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE19A3C42434F39100A30320 /* SampleFlightsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFlightsAppTests.swift; sourceTree = "<group>"; };
+		CE19A3C62434F39100A30320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE35D73222983B0300EF8901 /* ColorSchemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
 		CE35D73422983B0300EF8901 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		CE35D73622983B0300EF8901 /* BlackColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackColorScheme.swift; sourceTree = "<group>"; };
@@ -95,14 +120,8 @@
 		CE35D76C22983B0300EF8901 /* InfoScreenRateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoScreenRateCell.xib; sourceTree = "<group>"; };
 		CE35D76E22983B0300EF8901 /* InfoScreenVersionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoScreenVersionCell.xib; sourceTree = "<group>"; };
 		CE35D76F22983B0300EF8901 /* InfoScreenVersionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenVersionCell.swift; sourceTree = "<group>"; };
-		CE35D77E22983B0300EF8901 /* ASTWaitingScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTWaitingScreenViewController.swift; sourceTree = "<group>"; };
-		CE35D77F22983B0300EF8901 /* ASTWaitingScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTWaitingScreenViewController.xib; sourceTree = "<group>"; };
-		CE35D78022983B0300EF8901 /* ASTWaitingScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTWaitingScreenPresenter.swift; sourceTree = "<group>"; };
-		CE35D78322983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTWaitingScreenPlaneSceneView.swift; sourceTree = "<group>"; };
-		CE35D78422983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTWaitingScreenPlaneSceneView.xib; sourceTree = "<group>"; };
 		CE35D79922983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JRSDKSearchInfoBuilder+Config.swift"; sourceTree = "<group>"; };
 		CE35D7A022983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HLDefaultCitiesFactory+Config.swift"; sourceTree = "<group>"; };
-		CE35D7A422983B0300EF8901 /* UIView+RTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RTL.swift"; sourceTree = "<group>"; };
 		CE35D7A722983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+BackBarButtonItem.swift"; sourceTree = "<group>"; };
 		CE35D871229BEFE900EF8901 /* TravelpayoutsTravelApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TravelpayoutsTravelApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE35D87C229BF84A00EF8901 /* HLEmailSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLEmailSender.h; sourceTree = "<group>"; };
@@ -134,7 +153,6 @@
 		CE35D8CD229BF9A900EF8901 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE35D8D0229BF9A900EF8901 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		CE35D8DF229C24C800EF8901 /* App.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App.xcassets; sourceTree = "<group>"; };
-		CE35D8EB229D5BFE00EF8901 /* default_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_config.plist; sourceTree = "<group>"; };
 		CE35D8ED229D5CC400EF8901 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		CE900A0622A153F400330E56 /* InfoScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreenRouter.swift; sourceTree = "<group>"; };
 		CE900A0822A52A1300330E56 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -173,16 +191,31 @@
 		CED2005E231D45960010A8EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEDD058023674787003E9C3A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CEDD058123674788003E9C3A /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CEF4A84922CBA1A90096B6C2 /* TemplateAppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAppConfiguration.swift; sourceTree = "<group>"; };
 		CEFA872322C1004F00AF34A1 /* TravelpayoutsTravelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelpayoutsTravelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFA872522C1004F00AF34A1 /* TravelpayoutsTravelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelpayoutsTravelAppTests.swift; sourceTree = "<group>"; };
 		CEFA872722C1004F00AF34A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D553565D1BD04C2ACA348EEA /* Pods-TravelpayoutsTravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp.release.xcconfig"; sourceTree = "<group>"; };
-		D8707560D570FD4164EED738 /* Pods_TravelpayoutsTravelAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelpayoutsTravelAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFB9A7E5BE4FAE3BED45B62D /* Pods-TravelpayoutsTravelAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelAppTests.release.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelAppTests/Pods-TravelpayoutsTravelAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEFB9C6E242A3A420027A662 /* SampleFlightsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleFlightsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFB9C70242A3A420027A662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEFB9C74242A3A420027A662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEFB9C79242A3A460027A662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFB9C7C242A3A460027A662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEFB9C7E242A3A460027A662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9BB0B20502DF4EC2832A4B7 /* Pods_LebedevAppUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LebedevAppUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0F7463689836B28AC66833 /* Pods_SampleFlightsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleFlightsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1463DACF1B78B7A3C25503A /* Pods_TravelpayoutsTravelAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelpayoutsTravelAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE484593B12249FFBDE962B /* Pods-SampleFlightsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleFlightsApp.debug.xcconfig"; path = "Target Support Files/Pods-SampleFlightsApp/Pods-SampleFlightsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FA9CAAF872E010D672594202 /* Pods-SampleFlightsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleFlightsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-SampleFlightsAppTests/Pods-SampleFlightsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE19A3BF2434F39100A30320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA3C5CF26400707DA650171 /* Pods_SampleFlightsAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEAAD392223A80A900E7C5D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,27 +228,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A381469BFF2268443A772106 /* Pods_TravelpayoutsTravelAppTests.framework in Frameworks */,
+				D6C6199E8AC7654A80ACF647 /* Pods_TravelpayoutsTravelAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFB9C6B242A3A420027A662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDC87C5D2F916B0E16727839 /* Pods_SampleFlightsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		460381E2241B9EA600089A52 /* AdsManager */ = {
+			isa = PBXGroup;
+			children = (
+				460381E6241B9F9300089A52 /* AppodealAdsManager.swift */,
+			);
+			path = AdsManager;
+			sourceTree = "<group>";
+		};
 		81BD72274673F2E6C52BB882 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				B098AE253B4FF377B2B6A383 /* Pods_TravelpayoutsTravelApp.framework */,
-				D8707560D570FD4164EED738 /* Pods_TravelpayoutsTravelAppTests.framework */,
+				BACD3BDDB685208E8A7EF1A6 /* Pods_LebedevApp.framework */,
+				E1463DACF1B78B7A3C25503A /* Pods_TravelpayoutsTravelAppTests.framework */,
+				D9BB0B20502DF4EC2832A4B7 /* Pods_LebedevAppUI.framework */,
+				72B0F2337CCDD8336ED3B267 /* Pods_SampleFlightsApp.framework */,
+				DB0F7463689836B28AC66833 /* Pods_SampleFlightsAppTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE19A3C32434F39100A30320 /* SampleFlightsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE19A3C42434F39100A30320 /* SampleFlightsAppTests.swift */,
+				CE19A3C62434F39100A30320 /* Info.plist */,
+			);
+			path = SampleFlightsAppTests;
 			sourceTree = "<group>";
 		};
 		CE35D72F22983B0300EF8901 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				CE35D871229BEFE900EF8901 /* TravelpayoutsTravelApp-Bridging-Header.h */,
-				CEF4A84922CBA1A90096B6C2 /* TemplateAppConfiguration.swift */,
+				4693D2C6240FD3CF0036AACE /* TemplateAppConfiguration.swift */,
 				CED20041231D42580010A8EB /* AppLocalizations.swift */,
 				CE35D73022983B0300EF8901 /* ColorManagment */,
 				CE35D74022983B0300EF8901 /* CommonSource */,
@@ -249,10 +311,10 @@
 		CE35D74022983B0300EF8901 /* CommonSource */ = {
 			isa = PBXGroup;
 			children = (
+				460381E2241B9EA600089A52 /* AdsManager */,
 				CE35D882229BF8DC00EF8901 /* Alerts */,
 				CE35D75922983B0300EF8901 /* InfoScreen */,
 				CE35D87B229BF84A00EF8901 /* MailSender */,
-				CE35D77D22983B0300EF8901 /* WaitingScreen */,
 			);
 			path = CommonSource;
 			sourceTree = "<group>";
@@ -322,41 +384,12 @@
 			path = InfoScreenVersionCell;
 			sourceTree = "<group>";
 		};
-		CE35D77D22983B0300EF8901 /* WaitingScreen */ = {
-			isa = PBXGroup;
-			children = (
-				CE35D77E22983B0300EF8901 /* ASTWaitingScreenViewController.swift */,
-				CE35D77F22983B0300EF8901 /* ASTWaitingScreenViewController.xib */,
-				CE35D78022983B0300EF8901 /* ASTWaitingScreenPresenter.swift */,
-				CE35D78122983B0300EF8901 /* Views */,
-			);
-			path = WaitingScreen;
-			sourceTree = "<group>";
-		};
-		CE35D78122983B0300EF8901 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CE35D78222983B0300EF8901 /* ASTWaitingScreenPlaneSceneView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		CE35D78222983B0300EF8901 /* ASTWaitingScreenPlaneSceneView */ = {
-			isa = PBXGroup;
-			children = (
-				CE35D78322983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.swift */,
-				CE35D78422983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.xib */,
-			);
-			path = ASTWaitingScreenPlaneSceneView;
-			sourceTree = "<group>";
-		};
 		CE35D79722983B0300EF8901 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				CE35D7A022983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift */,
 				CE35D79922983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift */,
 				CE35D7A722983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift */,
-				CE35D7A422983B0300EF8901 /* UIView+RTL.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -396,6 +429,8 @@
 			children = (
 				CEAAD397223A80A900E7C5D8 /* TravelpayoutsTravelApp */,
 				CEFA872422C1004F00AF34A1 /* TravelpayoutsTravelAppTests */,
+				CEFB9C6F242A3A420027A662 /* SampleFlightsApp */,
+				CE19A3C32434F39100A30320 /* SampleFlightsAppTests */,
 				CEAAD396223A80A900E7C5D8 /* Products */,
 				E7446A59322D4C43AB64D94D /* Pods */,
 				81BD72274673F2E6C52BB882 /* Frameworks */,
@@ -407,6 +442,8 @@
 			children = (
 				CEAAD395223A80A900E7C5D8 /* TravelpayoutsTravelApp.app */,
 				CEFA872322C1004F00AF34A1 /* TravelpayoutsTravelAppTests.xctest */,
+				CEFB9C6E242A3A420027A662 /* SampleFlightsApp.app */,
+				CE19A3C22434F39100A30320 /* SampleFlightsAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -414,8 +451,8 @@
 		CEAAD397223A80A900E7C5D8 /* TravelpayoutsTravelApp */ = {
 			isa = PBXGroup;
 			children = (
-				CE35D8EB229D5BFE00EF8901 /* default_config.plist */,
 				CEB0C73222B3B41E00D454C8 /* GoogleService-Info.plist */,
+				46DC5E362424CDDF00C110E1 /* default_config.plist */,
 				CEAAD3A4223A80AA00E7C5D8 /* Info.plist */,
 				CEAAD398223A80A900E7C5D8 /* AppDelegate.swift */,
 				CE35D8ED229D5CC400EF8901 /* AppIcon.xcassets */,
@@ -435,13 +472,33 @@
 			path = TravelpayoutsTravelAppTests;
 			sourceTree = "<group>";
 		};
+		CEFB9C6F242A3A420027A662 /* SampleFlightsApp */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB9C70242A3A420027A662 /* AppDelegate.swift */,
+				CEFB9C74242A3A420027A662 /* ViewController.swift */,
+				CEFB9C79242A3A460027A662 /* Assets.xcassets */,
+				CEFB9C7B242A3A460027A662 /* LaunchScreen.storyboard */,
+				CEFB9C7E242A3A460027A662 /* Info.plist */,
+			);
+			path = SampleFlightsApp;
+			sourceTree = "<group>";
+		};
 		E7446A59322D4C43AB64D94D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1945C76EA32DFD29E9AA3D75 /* Pods-TravelpayoutsTravelApp.debug.xcconfig */,
-				D553565D1BD04C2ACA348EEA /* Pods-TravelpayoutsTravelApp.release.xcconfig */,
-				8A6EB59913CD62EC2FFE0045 /* Pods-TravelpayoutsTravelAppTests.debug.xcconfig */,
-				DFB9A7E5BE4FAE3BED45B62D /* Pods-TravelpayoutsTravelAppTests.release.xcconfig */,
+				09FA86A706F9E1C98E3C707F /* Pods-TravelpayoutsTravelApp.debug.xcconfig */,
+				0B55F0ED1CDC9C2AA4BEBAFD /* Pods-TravelpayoutsTravelApp.release.xcconfig */,
+				B63170E84EE681E83D34DE08 /* Pods-LebedevApp.debug.xcconfig */,
+				86C9E86F4969BD02DE842BF9 /* Pods-LebedevApp.release.xcconfig */,
+				6CA826E536DF850222CAE0B4 /* Pods-TravelpayoutsTravelAppTests.debug.xcconfig */,
+				A3EB6DFA7BF842C3EA35D900 /* Pods-TravelpayoutsTravelAppTests.release.xcconfig */,
+				07AB4526C4EC09EEA49ED477 /* Pods-LebedevAppUI.debug.xcconfig */,
+				78D39EFCCC2BC4707BAC3E8E /* Pods-LebedevAppUI.release.xcconfig */,
+				EAE484593B12249FFBDE962B /* Pods-SampleFlightsApp.debug.xcconfig */,
+				BA2E270BEA919A4FA567A69E /* Pods-SampleFlightsApp.release.xcconfig */,
+				FA9CAAF872E010D672594202 /* Pods-SampleFlightsAppTests.debug.xcconfig */,
+				92595E2F54527F0AB6C27445 /* Pods-SampleFlightsAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -449,6 +506,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CE19A3C12434F39100A30320 /* SampleFlightsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE19A3CB2434F39100A30320 /* Build configuration list for PBXNativeTarget "SampleFlightsAppTests" */;
+			buildPhases = (
+				8391359D2C7ADEED026EBB91 /* [CP] Check Pods Manifest.lock */,
+				CE19A3BE2434F39100A30320 /* Sources */,
+				CE19A3BF2434F39100A30320 /* Frameworks */,
+				CE19A3C02434F39100A30320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE19A3C82434F39100A30320 /* PBXTargetDependency */,
+			);
+			name = SampleFlightsAppTests;
+			productName = SampleFlightsAppTests;
+			productReference = CE19A3C22434F39100A30320 /* SampleFlightsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CEAAD394223A80A900E7C5D8 /* TravelpayoutsTravelApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEAAD3A7223A80AA00E7C5D8 /* Build configuration list for PBXNativeTarget "TravelpayoutsTravelApp" */;
@@ -472,7 +548,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEFA872C22C1004F00AF34A1 /* Build configuration list for PBXNativeTarget "TravelpayoutsTravelAppTests" */;
 			buildPhases = (
-				900569EB1E9EA41B0BAC1A7A /* [CP] Check Pods Manifest.lock */,
+				35397292C89793C78ABF9491 /* [CP] Check Pods Manifest.lock */,
 				CEFA871F22C1004F00AF34A1 /* Sources */,
 				CEFA872022C1004F00AF34A1 /* Frameworks */,
 				CEFA872122C1004F00AF34A1 /* Resources */,
@@ -487,22 +563,48 @@
 			productReference = CEFA872322C1004F00AF34A1 /* TravelpayoutsTravelAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CEFB9C6D242A3A420027A662 /* SampleFlightsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFB9C81242A3A460027A662 /* Build configuration list for PBXNativeTarget "SampleFlightsApp" */;
+			buildPhases = (
+				C666CE89E3931C044BDDC558 /* [CP] Check Pods Manifest.lock */,
+				CEFB9C6A242A3A420027A662 /* Sources */,
+				CEFB9C6B242A3A420027A662 /* Frameworks */,
+				CEFB9C6C242A3A420027A662 /* Resources */,
+				17927FF5977538AA89C62729 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFlightsApp;
+			productName = SampleFlightsApp;
+			productReference = CEFB9C6E242A3A420027A662 /* SampleFlightsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CEAAD38D223A80A900E7C5D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Go Travel Un Limited";
 				TargetAttributes = {
+					CE19A3C12434F39100A30320 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = CEFB9C6D242A3A420027A662;
+					};
 					CEAAD394223A80A900E7C5D8 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					CEFA872222C1004F00AF34A1 = {
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = CEAAD394223A80A900E7C5D8;
+					};
+					CEFB9C6D242A3A420027A662 = {
+						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
@@ -545,27 +647,34 @@
 			targets = (
 				CEAAD394223A80A900E7C5D8 /* TravelpayoutsTravelApp */,
 				CEFA872222C1004F00AF34A1 /* TravelpayoutsTravelAppTests */,
+				CEFB9C6D242A3A420027A662 /* SampleFlightsApp */,
+				CE19A3C12434F39100A30320 /* SampleFlightsAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE19A3C02434F39100A30320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEAAD393223A80A900E7C5D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CEB0C73322B3B41E00D454C8 /* GoogleService-Info.plist in Resources */,
 				CE35D81E22983B0300EF8901 /* InfoScreenAboutCell.xib in Resources */,
-				CE35D82922983B0300EF8901 /* ASTWaitingScreenViewController.xib in Resources */,
 				CE35D8EE229D5CC400EF8901 /* AppIcon.xcassets in Resources */,
 				CE35D81D22983B0300EF8901 /* InfoScreenViewController.xib in Resources */,
 				CE35D8D3229BF9A900EF8901 /* InfoPlist.strings in Resources */,
 				CE35D82122983B0300EF8901 /* InfoScreenRateCell.xib in Resources */,
-				CE35D8E0229C24C800EF8901 /* App.xcassets in Resources */,
-				CE35D82C22983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.xib in Resources */,
 				CE900A0922A52A1300330E56 /* LaunchScreen.xib in Resources */,
+				4693D2CA240FD8760036AACE /* App.xcassets in Resources */,
 				CE35D82222983B0300EF8901 /* InfoScreenVersionCell.xib in Resources */,
-				CE35D8EC229D5BFE00EF8901 /* default_config.plist in Resources */,
+				46DC5E372424CDDF00C110E1 /* default_config.plist in Resources */,
 				CED20045231D45750010A8EB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +683,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEFB9C6C242A3A420027A662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFB9C7D242A3A460027A662 /* LaunchScreen.storyboard in Resources */,
+				CEFB9C7A242A3A460027A662 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,24 +720,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		377106953E320ED7A46165CD /* [CP] Copy Pods Resources */ = {
+		17927FF5977538AA89C62729 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SampleFlightsApp/Pods-SampleFlightsApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SampleFlightsApp/Pods-SampleFlightsApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleFlightsApp/Pods-SampleFlightsApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		900569EB1E9EA41B0BAC1A7A /* [CP] Check Pods Manifest.lock */ = {
+		35397292C89793C78ABF9491 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -641,9 +759,78 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		377106953E320ED7A46165CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8391359D2C7ADEED026EBB91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleFlightsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C666CE89E3931C044BDDC558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleFlightsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE19A3BE2434F39100A30320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE19A3C52434F39100A30320 /* SampleFlightsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEAAD391223A80A900E7C5D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,17 +839,17 @@
 				CE35D7FA22983B0300EF8901 /* ColorSchemeManager.swift in Sources */,
 				CE900A0722A153F400330E56 /* InfoScreenRouter.swift in Sources */,
 				CECC2EC622D5F964003F3996 /* HLAlertsFabric.m in Sources */,
-				CE35D83F22983B0300EF8901 /* UIView+RTL.swift in Sources */,
 				CE35D83B22983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift in Sources */,
 				CEAAD399223A80A900E7C5D8 /* AppDelegate.swift in Sources */,
 				CE35D81C22983B0300EF8901 /* InfoScreenPresenter.swift in Sources */,
 				CE35D81922983B0300EF8901 /* InfoScreenRateCellModel.swift in Sources */,
+				4693D2C7240FD3CF0036AACE /* TemplateAppConfiguration.swift in Sources */,
 				CE35D81B22983B0300EF8901 /* InfoScreenViewController.swift in Sources */,
 				CE900A0B22A5327700330E56 /* ASTColorScheme.swift in Sources */,
 				CE35D84222983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift in Sources */,
 				CE35D7FF22983B0300EF8901 /* CustomColorScheme.swift in Sources */,
-				CEF4A84A22CBA1A90096B6C2 /* TemplateAppConfiguration.swift in Sources */,
 				CE35D7FB22983B0300EF8901 /* ColorScheme.swift in Sources */,
+				460381E7241B9F9300089A52 /* AppodealAdsManager.swift in Sources */,
 				CE35D7FE22983B0300EF8901 /* PurpleColorScheme.swift in Sources */,
 				CE35D82322983B0300EF8901 /* InfoScreenVersionCell.swift in Sources */,
 				CE900A0D22A5389E00330E56 /* ASTJRC.swift in Sources */,
@@ -671,16 +858,13 @@
 				CED20042231D42580010A8EB /* AppLocalizations.swift in Sources */,
 				CE35D83422983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift in Sources */,
 				CE35D881229BF84A00EF8901 /* HLMailComposeVC.m in Sources */,
-				CE35D82A22983B0300EF8901 /* ASTWaitingScreenPresenter.swift in Sources */,
 				CE35D81422983B0300EF8901 /* InfoScreenCellModelProtocol.swift in Sources */,
 				CE35D82022983B0300EF8901 /* InfoScreenRateCell.swift in Sources */,
 				CE35D81322983B0300EF8901 /* InfoScreenDetailCellModel.swift in Sources */,
 				CE35D880229BF84A00EF8901 /* HLEmailSender.m in Sources */,
 				CE35D81A22983B0300EF8901 /* InfoScreenIconImageViewFiveTimesTapHandler.swift in Sources */,
 				CE35D81F22983B0300EF8901 /* InfoScreenAboutCell.swift in Sources */,
-				CE35D82B22983B0300EF8901 /* ASTWaitingScreenPlaneSceneView.swift in Sources */,
 				CE35D81722983B0300EF8901 /* InfoScreenExtrnalCellModel.swift in Sources */,
-				CE35D82822983B0300EF8901 /* ASTWaitingScreenViewController.swift in Sources */,
 				CE35D81622983B0300EF8901 /* InfoScreenBasicCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,9 +877,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEFB9C6A242A3A420027A662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFB9C75242A3A420027A662 /* ViewController.swift in Sources */,
+				CEFB9C71242A3A420027A662 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE19A3C82434F39100A30320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEFB9C6D242A3A420027A662 /* SampleFlightsApp */;
+			targetProxy = CE19A3C72434F39100A30320 /* PBXContainerItemProxy */;
+		};
 		CEFA872922C1004F00AF34A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CEAAD394223A80A900E7C5D8 /* TravelpayoutsTravelApp */;
@@ -768,9 +966,71 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		CEFB9C7B242A3A460027A662 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEFB9C7C242A3A460027A662 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE19A3C92434F39100A30320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9CAAF872E010D672594202 /* Pods-SampleFlightsAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SampleFlightsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.SampleFlightsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleFlightsApp.app/SampleFlightsApp";
+			};
+			name = Debug;
+		};
+		CE19A3CA2434F39100A30320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92595E2F54527F0AB6C27445 /* Pods-SampleFlightsAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SampleFlightsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.SampleFlightsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleFlightsApp.app/SampleFlightsApp";
+			};
+			name = Release;
+		};
 		CEAAD3A5223A80AA00E7C5D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -887,7 +1147,7 @@
 		};
 		CEAAD3A8223A80AA00E7C5D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1945C76EA32DFD29E9AA3D75 /* Pods-TravelpayoutsTravelApp.debug.xcconfig */;
+			baseConfigurationReference = 09FA86A706F9E1C98E3C707F /* Pods-TravelpayoutsTravelApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
@@ -905,7 +1165,7 @@
 		};
 		CEAAD3A9223A80AA00E7C5D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D553565D1BD04C2ACA348EEA /* Pods-TravelpayoutsTravelApp.release.xcconfig */;
+			baseConfigurationReference = 0B55F0ED1CDC9C2AA4BEBAFD /* Pods-TravelpayoutsTravelApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
@@ -923,11 +1183,13 @@
 		};
 		CEFA872A22C1004F00AF34A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A6EB59913CD62EC2FFE0045 /* Pods-TravelpayoutsTravelAppTests.debug.xcconfig */;
+			baseConfigurationReference = 6CA826E536DF850222CAE0B4 /* Pods-TravelpayoutsTravelAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TravelpayoutsTravelAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -938,6 +1200,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoapods-test.TravelpayoutsTravelAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelpayoutsTravelApp.app/TravelpayoutsTravelApp";
@@ -946,11 +1209,14 @@
 		};
 		CEFA872B22C1004F00AF34A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFB9A7E5BE4FAE3BED45B62D /* Pods-TravelpayoutsTravelAppTests.release.xcconfig */;
+			baseConfigurationReference = A3EB6DFA7BF842C3EA35D900 /* Pods-TravelpayoutsTravelAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TravelpayoutsTravelAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
@@ -961,15 +1227,59 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cocoapods-test.TravelpayoutsTravelAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelpayoutsTravelApp.app/TravelpayoutsTravelApp";
 			};
 			name = Release;
 		};
+		CEFB9C7F242A3A460027A662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE484593B12249FFBDE962B /* Pods-SampleFlightsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleFlightsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.flightsappsample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEFB9C80242A3A460027A662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2E270BEA919A4FA567A69E /* Pods-SampleFlightsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleFlightsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.flightsappsample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE19A3CB2434F39100A30320 /* Build configuration list for PBXNativeTarget "SampleFlightsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE19A3C92434F39100A30320 /* Debug */,
+				CE19A3CA2434F39100A30320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEAAD390223A80A900E7C5D8 /* Build configuration list for PBXProject "TravelpayoutsTravelApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -993,6 +1303,15 @@
 			buildConfigurations = (
 				CEFA872A22C1004F00AF34A1 /* Debug */,
 				CEFA872B22C1004F00AF34A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFB9C81242A3A460027A662 /* Build configuration list for PBXNativeTarget "SampleFlightsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFB9C7F242A3A460027A662 /* Debug */,
+				CEFB9C80242A3A460027A662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

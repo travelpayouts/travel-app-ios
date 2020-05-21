@@ -18,5 +18,4 @@ class AppLocalizations: TemplateAppLocalizations {
 //    override var hotelsSearchFormTitle: String {
 //        return "test2"
 //    }
-
 }

@@ -26,5 +26,4 @@ public class ASTColorScheme: NSObject {
     public static func darkTextColor() -> UIColor {
         return JRC.current().COMMON_TEXT()
     }
-
 }

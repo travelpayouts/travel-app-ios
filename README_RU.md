@@ -35,7 +35,7 @@ Travelpayouts Travel App iOS
 8. Опубликуйте приложение через [App Store Connect](https://appstoreconnect.apple.com)
 
 ### 📱 Поддержка версий iOS
-Поддерживаются версии, начиная с iOS 10.0
+Поддерживаются версии, начиная с iOS 11.0
 
 ### 🖼 Иконка приложения
 **Не забудьте заменить иконку приложения** (по умолчанию, в шаблоне используются иконки, залитые белым цветом). Для этого в папке ```TravelpayoutsTravelApp/AppIcon.xcassets/AppIcon.appiconset``` достаточно заменить картинки (20.png, 29.png, 40.png и т.д.) на свои с аналогичными именами.
@@ -68,3 +68,102 @@ actionColor | Цвет выделения основных действий
 
 ### 🏭 Использование Firebase
 Шаблонное приложение поддерживает сервисы **Firebase**. Для этого нужно подключить приложение в консоли Firebase, скачать и скопировать с заменой в папку ```TravelpayoutsTravelApp``` файл ```GoogleService-Info.plist``` и перевести флаг ```firebase_enabled``` в состояние ```YES``` в ```default_config.plist```.  Из коробки поддерживается работа аналитики, а именно поиск / переход на билет / покупка в билетной части и поиск / выбор отеля / покупка в отельной части.
+
+
+Интеграция в существующее приложение
+=================
+[Travelpayouts](https://www.travelpayouts.com) Sample Flights App — пример использования библиотеки AviasalesKit для интеграции поиска авиабилетов/отелей/автомобилей в уже существующее приложение для iPhone/iPad. Пользователи вашего приложения смогут покупать авиабилет или бронировать отель, а вы будете получать вознаграждение.
+
+Чтобы отслеживать выплаты, посетите нашу партнерскую сеть — [Travelpayouts.com](https://www.travelpayouts.com/).
+
+Узнайте подробнее о доходах в [Travelpayouts FAQ](https://support.travelpayouts.com/hc/ru/articles/203955613-Комиссия-и-выплаты).
+
+## Интеграция библиотеки
+Приложение должно требовать минимальную версию iOS не ниже iOS 11.0, и должно поддерживать Swift. Если вы используете Objective-C, то вы можете завернуть все обращения к библиотеке в класс, который будет доступен из Objective-C.
+
+### Добавление зависимости в CocoaPods
+Добавьте функцию с зависимостями в Podfile
+```ruby
+def aviasales_kit_dependencies
+    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.3.podspec'
+
+    # forked AviasalesKit dependencies
+    pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
+    pod "SloppySwiper", git: 'https://github.com/glassoff/SloppySwiper.git', branch: 'aviasales'
+    pod 'LDNetDiagnoService', git: 'https://github.com/KosyanMedia/LDNetDiagnoService_IOS.git', commit: '34eacdaa7767f95389b13998bef3fa9137edb2b1'
+    pod 'libCurlPods', git: 'https://github.com/KosyanMedia/libCurlPods.git', tag: '7.60.3'
+    pod 'MagicalRecord', git: 'https://github.com/magicalpanda/MagicalRecord.git', tag: 'v2.4.0'
+    pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3f32f7a9276732dfa28c5e3886f2f95e76aa60c5', inhibit_warnings: true
+    pod 'UIColor+Hex', git: 'https://github.com/KosyanMedia/UIColor-Hex.git', commit: 'df1248c06c11be7c67b7dd3227bff1113112e823'
+
+    # suppress warnings
+    pod 'TTTAttributedLabel', inhibit_warnings: true
+    pod 'SwiftProtobuf', inhibit_warnings: true
+    pod 'BZipCompression', inhibit_warnings: true
+    pod 'FMDB', inhibit_warnings: true
+    pod 'GRMustache', inhibit_warnings: true
+    pod 'PromiseKit', inhibit_warnings: true
+    pod 'COSTouchVisualizer', inhibit_warnings: true
+end
+```
+
+Вызовите функцию из таргета, в который нужно проинтегрировать запуск экранов поиска.
+```ruby
+target 'SampleFlightsApp' do
+    aviasales_kit_dependencies
+end
+```
+
+Установите зависимости
+```sh
+pod install --repo-update
+```
+
+### Инициализация в существующее приложение
+Добавьте код инициализации в ваш AppDelegate. Альтернативно, этот код можно вызвать один раз перед первым обращением к AviasalesViewControllersFactory.
+```swift
+import ASTemplateConfiguration
+```
+```swift
+AviasalesViewControllersFactory.shared.setup(window: window, config: { () -> Config in
+    var colorParams = ColorParams()
+    colorParams.mainColor = "9C6CBE" // первичный цвет дизайна (фон формы поиска)
+    colorParams.actionColor = "CE0755" // вторичный цвет дизайна (кнопка поиска)
+
+    var config = Config()
+    config.partnerMarker = "маркер" // партнерский маркер https://travelpayouts.com/
+    config.apiToken = "токен" // партнерский токен https://travelpayouts.com/
+    config.carRentalLink = "ссылка" // (опционально) партнерская ссылка для аренды авто https://www.travelpayouts.com/programs
+    config.colorParams = colorParams
+    return config
+}())
+```
+Добавьте нужные экраны поиска там, где вы хотите их показывать:
+```swift
+let flightsViewController = AviasalesViewControllersFactory.shared.flightsViewController()
+let hotelsViewController = AviasalesViewControllersFactory.shared.hotelsViewController()
+let carRentalViewController = AviasalesViewControllersFactory.shared.carRentalViewController()
+
+viewController.present(flightsViewController, animated: true, completion: nil)
+```
+
+### Изменения в info.plist
+Для работы библиотеки необходимо дополнить info.plist файл приложения следующими параметрами:
+```xml
+<true/>
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+    <key>NSAllowsArbitraryLoadsInWebContent</key>
+    <true/>
+</dict>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Used to find nearby hotels.</string>
+```
+NSAppTransportSecurity нужен для загрузки сайтов некоторых агенств по продаже билетов. NSLocationWhenInUseUsageDescription нужен для работы функции определения местоположения для поиска ближайших отелей.
+
+### Тонкая настройка
+Библиотека частично поддерживает тонкую настройку из шаблона приложения Travel App.
+Возможно настроить отдельные цвета по аналогии с ```ASTJRC.swift```.
+Изменить заголовки экранов поиска и некоторые другие строки по аналогии с ```AppLocalizations.swift```.

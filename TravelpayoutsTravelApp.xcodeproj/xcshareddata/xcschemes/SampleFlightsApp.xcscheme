@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
+   LastUpgradeVersion = "1140"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "CEAAD394223A80A900E7C5D8"
-                     BuildableName = "TravelpayoutsTravelApp.app"
-                     BlueprintName = "TravelpayoutsTravelApp"
+                     BlueprintIdentifier = "CEFB9C6D242A3A420027A662"
+                     BuildableName = "SampleFlightsApp.app"
+                     BlueprintName = "SampleFlightsApp"
                      ReferencedContainer = "container:TravelpayoutsTravelApp.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -32,9 +32,9 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "CEAAD394223A80A900E7C5D8"
-                     BuildableName = "TravelpayoutsTravelApp.app"
-                     BlueprintName = "TravelpayoutsTravelApp"
+                     BlueprintIdentifier = "CEFB9C6D242A3A420027A662"
+                     BuildableName = "SampleFlightsApp.app"
+                     BlueprintName = "SampleFlightsApp"
                      ReferencedContainer = "container:TravelpayoutsTravelApp.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -50,9 +50,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEAAD394223A80A900E7C5D8"
-               BuildableName = "TravelpayoutsTravelApp.app"
-               BlueprintName = "TravelpayoutsTravelApp"
+               BlueprintIdentifier = "CEFB9C6D242A3A420027A662"
+               BuildableName = "SampleFlightsApp.app"
+               BlueprintName = "SampleFlightsApp"
                ReferencedContainer = "container:TravelpayoutsTravelApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -63,23 +63,14 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEAAD394223A80A900E7C5D8"
-            BuildableName = "TravelpayoutsTravelApp.app"
-            BlueprintName = "TravelpayoutsTravelApp"
-            ReferencedContainer = "container:TravelpayoutsTravelApp.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CEFA872222C1004F00AF34A1"
-               BuildableName = "TravelpayoutsTravelAppTests.xctest"
-               BlueprintName = "TravelpayoutsTravelAppTests"
+               BlueprintIdentifier = "CE19A3C12434F39100A30320"
+               BuildableName = "SampleFlightsAppTests.xctest"
+               BlueprintName = "SampleFlightsAppTests"
                ReferencedContainer = "container:TravelpayoutsTravelApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -99,9 +90,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEAAD394223A80A900E7C5D8"
-            BuildableName = "TravelpayoutsTravelApp.app"
-            BlueprintName = "TravelpayoutsTravelApp"
+            BlueprintIdentifier = "CEFB9C6D242A3A420027A662"
+            BuildableName = "SampleFlightsApp.app"
+            BlueprintName = "SampleFlightsApp"
             ReferencedContainer = "container:TravelpayoutsTravelApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -116,9 +107,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CEAAD394223A80A900E7C5D8"
-            BuildableName = "TravelpayoutsTravelApp.app"
-            BlueprintName = "TravelpayoutsTravelApp"
+            BlueprintIdentifier = "CEFB9C6D242A3A420027A662"
+            BuildableName = "SampleFlightsApp.app"
+            BlueprintName = "SampleFlightsApp"
             ReferencedContainer = "container:TravelpayoutsTravelApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

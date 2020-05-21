@@ -12,4 +12,3 @@ import UIKit
     var mainColor: UIColor { get set }
     var actionColor: UIColor { get set }
 }
-

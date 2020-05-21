@@ -39,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         isTerminating = true
     }
-
 }
 
 private func validateConfig() {

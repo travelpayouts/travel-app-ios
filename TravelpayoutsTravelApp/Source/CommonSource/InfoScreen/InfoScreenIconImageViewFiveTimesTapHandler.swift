@@ -8,4 +8,3 @@ protocol InfoScreenIconImageViewFiveTimesTapHandler {
 extension InfoScreenIconImageViewFiveTimesTapHandler {
     func handleFiveTimesTap() {}
 }
-

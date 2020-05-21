@@ -10,7 +10,7 @@ protocol InfoScreenVersionCellProtocol {
 class InfoScreenVersionCell: UITableViewCell {
 
     @IBOutlet weak var versionLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
