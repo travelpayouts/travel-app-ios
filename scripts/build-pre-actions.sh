@@ -3,7 +3,8 @@
 if [ "$CONFIGURATION" == "Release" ] ; then
 
 PLISTPATH="$SRCROOT/$INFOPLIST_FILE"
-VERSIONNUM=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "$PLISTPATH")
+PLISTVERSIONNUM=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "$PLISTPATH")
+VERSIONNUM="$(eval echo "$PLISTVERSIONNUM")"
 FIRSTCOMPONENT=`echo $VERSIONNUM | awk -F "." '{print $1}'`
 SECONDCOMPONENT=`echo $VERSIONNUM | awk -F "." '{print $2}'`
 THIRDCOMPONENT=`echo $VERSIONNUM | awk -F "." '{print $3}'`
