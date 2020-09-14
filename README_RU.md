@@ -21,7 +21,7 @@ Travelpayouts Travel App iOS
   ```bash
   sudo gem install bundler
   bundle install
-  bunble exec pod install --repo-update
+  bundle exec pod install --repo-update
   ```
 
 **После этого для работы с проектом используйте файл ```TravelpayoutsTravelApp.xcworkspace```**.
