@@ -41,7 +41,7 @@ Application supports iOS 11.0 and higher
 
 ### ✈️🏨 Tab selection
 1. If you want to remove flights or hotels search tab, change values of ```flights_enabled``` and ```hotels_enabled``` to NO in Project settings. Information tab can't be removed this way.
-2. You can add Car Rental tab. To do this you need to join one car rental partner program from [Travelpayouts programs](https://www.travelpayouts.com/programs). Then you will need to generate a partner link and add it to the ```TravelpayoutsTravelApp/default_config.plist``` file to parameter ```car_rental_link```.
+2. You can add Car Rental tab. To do this you need to join one car rental affiliate program from [Travelpayouts programs](https://www.travelpayouts.com/programs). Then you will need to generate an affiliate link and add it to the ```TravelpayoutsTravelApp/default_config.plist``` file to parameter ```car_rental_link```. **Note**: Don't use Economybookings, because this program can't track a mobile traffic.
 
 ### 🔧🌻 Color customization
 You can choose color scheme in ```ColorSchemeManager.swift``` file. Just add to ```current``` variable one of these values: BlackColorScheme() / PurpleColorScheme(). Or set CustomColorScheme() value and set up any color scheme you need in ```CustomColorScheme.swift``` file.
@@ -64,7 +64,7 @@ To get additional profit from ads, we've integrated Mobile Ads [Appodeal SDK](ht
 Set up the ```feedback_email``` and ```itunes_link``` parameters in ```default_config.plist``` file to activate "Contact us" and "Rate this app" links.
 The recommended format for ```itunes_link``` is the following: ```https://itunes.apple.com/app/id1234567890?action=write-review```, where ```id1234567890``` is the identifier of a published application.
 
-## 🏭 **Use of Firebase**
+## 🏭 Use of Firebase
 Template app supports **Firebase** services. To enable them, please connect your app in the Firebase console, download and copy with replacement the ```GoogleService-Info.plist``` file to ```TravelpayoutsTravelApp``` folder and switch the ```firebase_enabled``` flag to ```YES``` in the ```default_config.plist``` file. Out of the box there is an analytics support for: Search / Ticket opened / Ticket booked in the airlines part and Search / Hotel opened / Hotel booked in the hotels part of the app.
 
 
