@@ -3,6 +3,7 @@
 
 import Foundation
 import AviasalesKit
+import JRProfile
 import SafariServices
 
 class InfoScreenRouter: JRBaseRouter {

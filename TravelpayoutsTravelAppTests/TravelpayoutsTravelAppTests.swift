@@ -10,12 +10,12 @@ class TravelpayoutsTravelAppTests: XCTestCase {
     func testMetadataHeader() {
         let metadata = AviasalesSDK.sharedInstance().serviceLocator.metadataBuilder.metadata(withSource: nil)
 
-        let affilateMarker = metadata["affiliate_marker"] as! String
+        let affiliateMarker = metadata["affiliate_marker"] as! String
         var partnerMarker = AppCredentials.current.partnerMarker() ?? ""
         if partnerMarker.isEmpty {
             partnerMarker = "sdk"
         }
-        XCTAssertEqual(affilateMarker, partnerMarker)
+        XCTAssertEqual(affiliateMarker, partnerMarker)
 
         let host = metadata["host"] as! String
         XCTAssertTrue(host.contains("sdk"))

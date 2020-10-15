@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         TemplateAppConfigurator.configurePostRouterSetup(window: window)
 
-        mainRouter.start(with: window)
+        mainRouter.start(with: window, splashScreen: false)
 
         return true
     }

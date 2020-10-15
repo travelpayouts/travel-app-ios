@@ -3,13 +3,20 @@
 if [ "$CONFIGURATION" == "Release" ] ; then
 
 PLISTPATH="$SRCROOT/$INFOPLIST_FILE"
+
 VERSIONNUM=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "$PLISTPATH")
+if [ "$VERSIONNUM" == '$(MARKETING_VERSION)' ] ; then
+    VERSIONNUM=$MARKETING_VERSION
+fi
 FIRSTCOMPONENT=`echo $VERSIONNUM | awk -F "." '{print $1}'`
 SECONDCOMPONENT=`echo $VERSIONNUM | awk -F "." '{print $2}'`
 THIRDCOMPONENT=`echo $VERSIONNUM | awk -F "." '{print $3}'`
 DATESTRING=`date +"%y%m%d%H%M"`
+if [ "$SECONDCOMPONENT" == "" ] ; then
+    SECONDCOMPONENT="0"
+fi
 if [ "$THIRDCOMPONENT" == "" ] ; then
-THIRDCOMPONENT="0"
+    THIRDCOMPONENT="0"
 fi
 BUILDNUMBER="$FIRSTCOMPONENT.$SECONDCOMPONENT.$THIRDCOMPONENT.$DATESTRING"
 /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BUILDNUMBER" "$PLISTPATH"

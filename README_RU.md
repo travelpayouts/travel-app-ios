@@ -91,20 +91,16 @@ def aviasales_kit_dependencies
     # forked AviasalesKit dependencies
     pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
     pod "SloppySwiper", git: 'https://github.com/glassoff/SloppySwiper.git', branch: 'aviasales'
-    pod 'LDNetDiagnoService', git: 'https://github.com/KosyanMedia/LDNetDiagnoService_IOS.git', commit: '34eacdaa7767f95389b13998bef3fa9137edb2b1'
-    pod 'libCurlPods', git: 'https://github.com/KosyanMedia/libCurlPods.git', tag: '7.60.3'
-    pod 'MagicalRecord', git: 'https://github.com/magicalpanda/MagicalRecord.git', tag: 'v2.4.0'
-    pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3f32f7a9276732dfa28c5e3886f2f95e76aa60c5', inhibit_warnings: true
-    pod 'UIColor+Hex', git: 'https://github.com/KosyanMedia/UIColor-Hex.git', commit: 'df1248c06c11be7c67b7dd3227bff1113112e823'
+    pod 'MagicalRecord', git: 'https://github.com/KosyanMedia/MagicalRecord.git', tag: 'v2.4.0-xcode12'
+    pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3770df30ee072a728becb8f1f6b7c29276a3dab4'
 
     # suppress warnings
     pod 'TTTAttributedLabel', inhibit_warnings: true
-    pod 'SwiftProtobuf', inhibit_warnings: true
     pod 'BZipCompression', inhibit_warnings: true
-    pod 'FMDB', inhibit_warnings: true
     pod 'GRMustache', inhibit_warnings: true
     pod 'PromiseKit', inhibit_warnings: true
     pod 'COSTouchVisualizer', inhibit_warnings: true
+    pod 'SnowplowTracker', inhibit_warnings: true
 end
 ```
 

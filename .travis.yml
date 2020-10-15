@@ -1,6 +1,6 @@
-osx_image: xcode11.5
+osx_image: xcode12
 language: objective-c
 xcode_workspace: TravelpayoutsTravelApp.xcworkspace
 xcode_scheme: [TravelpayoutsTravelApp, SampleFlightsApp]
-xcode_destination: platform=iOS Simulator,OS=13.5,name=iPhone 8
+xcode_destination: platform=iOS Simulator,OS=14.0,name=iPhone 8
 xcode_sdk: iphonesimulator
