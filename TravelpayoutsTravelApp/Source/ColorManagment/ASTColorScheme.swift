@@ -2,7 +2,7 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import UIKit
-import AviasalesKit
+import GTUDesignKit
 
 @objcMembers
 public class ASTColorScheme: NSObject {

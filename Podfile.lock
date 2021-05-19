@@ -1,38 +1,37 @@
 PODS:
   - Alamofire (4.9.1)
-  - Amplitude-iOS (4.10.0)
-  - APDAmazonAdsAdapter (2.7.4.1):
-    - Appodeal (= 2.7.4)
-  - Appodeal (2.7.4)
+  - AmazonAd (3.1.0)
+  - APDAmazonAdsAdapter (2.9.1.1):
+    - AmazonAd (= 3.1.0)
+    - Appodeal (= 2.9.1)
+  - Appodeal (2.9.1):
+    - Protobuf (~> 3.12)
+    - StackIAB (~> 1.2.0)
+    - StackModules (~> 1.0.3)
   - AutoCoding (2.2.3)
-  - AviasalesKit (6.4):
+  - AviasalesKit (6.5):
     - Alamofire (= 4.9.1)
-    - Amplitude-iOS (= 4.10.0)
     - AutoCoding (= 2.2.3)
     - BZipCompression (= 1.0.2)
     - ClusterKit/MapKit (= 0.4.1)
     - CollectionSwipableCellExtension
-    - COSTouchVisualizer (= 1.0.6)
-    - DynamicBlurView (= 5.0.3)
-    - Firebase/Core (= 6.33.0)
-    - Flurry-iOS-SDK/FlurrySDK (= 11.1.0)
+    - Firebase/Core (= 7.9.0)
     - FMDB (= 2.7.5)
     - GRMustache (= 7.3.2)
     - JVFloatLabeledTextField (= 1.2.2)
     - KeychainSwift (= 17.0.0)
-    - lottie-ios (= 3.1.8)
-    - MagicalRecord
+    - lottie-ios (= 3.2.1)
     - MBProgressHUD (= 1.2.0)
     - Neon
-    - PhoneNumberKit (= 3.3.1)
+    - PhoneNumberKit (= 3.3.3)
     - PromiseKit (= 6.13.1)
-    - PureLayout (= 3.1.6)
+    - PureLayout (= 3.1.7)
     - ReachabilitySwift (= 5.0.0)
-    - SDWebImage (= 5.9.2)
+    - SDWebImage (= 5.10.4)
     - SloppySwiper
     - Smartling.i18n (= 1.0.14)
     - SnowplowTracker (= 1.2.2)
-    - SwiftProtobuf (= 1.12.0)
+    - SwiftProtobuf (= 1.15.0)
     - TTTAttributedLabel (= 2.0.0)
     - UIImageViewAligned (= 0.0.1)
     - "UIView+Shake (= 1.4.0)"
@@ -42,88 +41,84 @@ PODS:
   - ClusterKit/MapKit (0.4.1):
     - ClusterKit/Core
   - CollectionSwipableCellExtension (0.0.5)
-  - COSTouchVisualizer (1.0.6)
-  - DynamicBlurView (5.0.3)
-  - Firebase/Core (6.33.0):
+  - Firebase/Core (7.9.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (= 6.8.3)
-  - Firebase/CoreOnly (6.33.0):
-    - FirebaseCore (= 6.10.3)
-  - FirebaseAnalytics (6.8.3):
-    - FirebaseCore (~> 6.10)
-    - FirebaseInstallations (~> 1.6)
-    - GoogleAppMeasurement (= 6.8.3)
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/MethodSwizzler (~> 6.7)
-    - GoogleUtilities/Network (~> 6.7)
-    - "GoogleUtilities/NSData+zlib (~> 6.7)"
-    - nanopb (~> 1.30906.0)
-  - FirebaseCore (6.10.3):
-    - FirebaseCoreDiagnostics (~> 1.6)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/Logger (~> 6.7)
-  - FirebaseCoreDiagnostics (1.7.0):
-    - GoogleDataTransport (~> 7.4)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/Logger (~> 6.7)
-    - nanopb (~> 1.30906.0)
-  - FirebaseInstallations (1.7.0):
-    - FirebaseCore (~> 6.10)
-    - GoogleUtilities/Environment (~> 6.7)
-    - GoogleUtilities/UserDefaults (~> 6.7)
+    - FirebaseAnalytics (~> 7.9.0)
+  - Firebase/CoreOnly (7.9.0):
+    - FirebaseCore (= 7.9.0)
+  - FirebaseAnalytics (7.9.0):
+    - FirebaseCore (~> 7.0)
+    - FirebaseInstallations (~> 7.0)
+    - GoogleAppMeasurement (= 7.9.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30907.0)
+  - FirebaseCore (7.9.0):
+    - FirebaseCoreDiagnostics (~> 7.4)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+  - FirebaseCoreDiagnostics (7.9.0):
+    - GoogleDataTransport (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/Logger (~> 7.0)
+    - nanopb (~> 2.30907.0)
+  - FirebaseInstallations (7.11.0):
+    - FirebaseCore (~> 7.0)
+    - GoogleUtilities/Environment (~> 7.0)
+    - GoogleUtilities/UserDefaults (~> 7.0)
     - PromisesObjC (~> 1.2)
-  - Flurry-iOS-SDK/FlurrySDK (11.1.0)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - GoogleAppMeasurement (6.8.3):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
-    - GoogleUtilities/MethodSwizzler (~> 6.7)
-    - GoogleUtilities/Network (~> 6.7)
-    - "GoogleUtilities/NSData+zlib (~> 6.7)"
-    - nanopb (~> 1.30906.0)
-  - GoogleDataTransport (7.5.1):
-    - nanopb (~> 1.30906.0)
-  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
+  - GoogleAppMeasurement (7.9.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.0)
+    - GoogleUtilities/MethodSwizzler (~> 7.0)
+    - GoogleUtilities/Network (~> 7.0)
+    - "GoogleUtilities/NSData+zlib (~> 7.0)"
+    - nanopb (~> 2.30907.0)
+  - GoogleDataTransport (8.3.1):
+    - GoogleUtilities/Environment (~> 7.2)
+    - nanopb (~> 2.30907.0)
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.4.1):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.7.2):
+  - GoogleUtilities/Environment (7.4.1):
     - PromisesObjC (~> 1.2)
-  - GoogleUtilities/Logger (6.7.2):
+  - GoogleUtilities/Logger (7.4.1):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.7.2):
+  - GoogleUtilities/MethodSwizzler (7.4.1):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.7.2):
+  - GoogleUtilities/Network (7.4.1):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.7.2)"
-  - GoogleUtilities/Reachability (6.7.2):
+  - "GoogleUtilities/NSData+zlib (7.4.1)"
+  - GoogleUtilities/Reachability (7.4.1):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (6.7.2):
+  - GoogleUtilities/UserDefaults (7.4.1):
     - GoogleUtilities/Logger
   - GRMustache (7.3.2):
     - JRSwizzle (~> 1.0)
   - JRSwizzle (1.0)
   - JVFloatLabeledTextField (1.2.2)
   - KeychainSwift (17.0.0)
-  - lottie-ios (3.1.8)
-  - MagicalRecord (2.4.0):
-    - MagicalRecord/Core (= 2.4.0)
-  - MagicalRecord/Core (2.4.0)
+  - lottie-ios (3.2.1)
   - MBProgressHUD (1.2.0)
-  - nanopb (1.30906.0):
-    - nanopb/decode (= 1.30906.0)
-    - nanopb/encode (= 1.30906.0)
-  - nanopb/decode (1.30906.0)
-  - nanopb/encode (1.30906.0)
+  - nanopb (2.30907.0):
+    - nanopb/decode (= 2.30907.0)
+    - nanopb/encode (= 2.30907.0)
+  - nanopb/decode (2.30907.0)
+  - nanopb/encode (2.30907.0)
   - Neon (0.4.0)
-  - PhoneNumberKit (3.3.1):
-    - PhoneNumberKit/PhoneNumberKitCore (= 3.3.1)
-    - PhoneNumberKit/UIKit (= 3.3.1)
-  - PhoneNumberKit/PhoneNumberKitCore (3.3.1)
-  - PhoneNumberKit/UIKit (3.3.1):
+  - PhoneNumberKit (3.3.3):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.3.3)
+    - PhoneNumberKit/UIKit (= 3.3.3)
+  - PhoneNumberKit/PhoneNumberKitCore (3.3.3)
+  - PhoneNumberKit/UIKit (3.3.3):
     - PhoneNumberKit/PhoneNumberKitCore
   - PromiseKit (6.13.1):
     - PromiseKit/CorePromise (= 6.13.1)
@@ -134,32 +129,75 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.13.1):
     - PromiseKit/CorePromise
-  - PromisesObjC (1.2.11)
-  - PureLayout (3.1.6)
+  - PromisesObjC (1.2.12)
+  - Protobuf (3.17.0)
+  - PureLayout (3.1.7)
   - ReachabilitySwift (5.0.0)
-  - SDWebImage (5.9.2):
-    - SDWebImage/Core (= 5.9.2)
-  - SDWebImage/Core (5.9.2)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
   - SloppySwiper (0.6)
   - Smartling.i18n (1.0.14)
   - SnowplowTracker (1.2.2):
     - FMDB (~> 2.6)
-  - SwiftProtobuf (1.12.0)
+  - StackIAB (1.2.0):
+    - StackIAB/StackIABAssets (= 1.2.0)
+    - StackIAB/StackMRAIDKit (= 1.2.0)
+    - StackIAB/StackNASTKit (= 1.2.0)
+    - StackIAB/StackRichMedia (= 1.2.0)
+    - StackIAB/StackVASTAssets (= 1.2.0)
+    - StackIAB/StackVASTKit (= 1.2.0)
+    - StackIAB/StackVideoPlayer (= 1.2.0)
+    - StackIAB/StackXML (= 1.2.0)
+    - StackModules (~> 1.0.0)
+  - StackIAB/StackIABAssets (1.2.0):
+    - StackModules (~> 1.0.0)
+  - StackIAB/StackMRAIDKit (1.2.0):
+    - StackIAB/StackIABAssets
+    - StackModules (~> 1.0.0)
+  - StackIAB/StackNASTKit (1.2.0):
+    - StackIAB/StackVASTKit
+    - StackModules (~> 1.0.0)
+  - StackIAB/StackRichMedia (1.2.0):
+    - StackIAB/StackIABAssets
+    - StackIAB/StackVASTAssets
+    - StackIAB/StackVideoPlayer
+    - StackModules (~> 1.0.0)
+  - StackIAB/StackVASTAssets (1.2.0):
+    - StackIAB/StackIABAssets
+    - StackIAB/StackXML
+    - StackModules (~> 1.0.0)
+  - StackIAB/StackVASTKit (1.2.0):
+    - StackIAB/StackMRAIDKit
+    - StackIAB/StackVASTAssets
+    - StackIAB/StackVideoPlayer
+    - StackModules (~> 1.0.0)
+  - StackIAB/StackVideoPlayer (1.2.0):
+    - StackModules (~> 1.0.0)
+  - StackIAB/StackXML (1.2.0):
+    - StackModules (~> 1.0.0)
+  - StackModules (1.0.8):
+    - StackModules/StackUIKit (= 1.0.8)
+  - StackModules/StackFoundation (1.0.8)
+  - StackModules/StackUIKit (1.0.8):
+    - StackModules/StackFoundation
+  - SwiftProtobuf (1.15.0)
   - TTTAttributedLabel (2.0.0)
   - UIImageViewAligned (0.0.1)
   - "UIView+Shake (1.4.0)"
   - YYKeyboardManager (1.0.1)
 
 DEPENDENCIES:
-  - APDAmazonAdsAdapter (= 2.7.4.1)
-  - Appodeal (= 2.7.4)
-  - AviasalesKit (from `https://ios.aviasales.ru/cocoapods/AviasalesKit_6.4.podspec`)
+  - Alamofire
+  - APDAmazonAdsAdapter (= 2.9.1.1)
+  - Appodeal (= 2.9.1)
+  - AviasalesKit (from `https://ios.aviasales.ru/cocoapods/AviasalesKit_6.5.podspec`)
   - BZipCompression
   - CollectionSwipableCellExtension (from `https://github.com/KosyanMedia/CollectionSwipableCellExtension.git`, commit `d3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0`)
-  - COSTouchVisualizer
   - GRMustache
-  - MagicalRecord (from `https://github.com/KosyanMedia/MagicalRecord.git`, tag `v2.4.0-xcode12`)
+  - lottie-ios
   - Neon (from `https://github.com/KosyanMedia/Neon.git`, commit `3770df30ee072a728becb8f1f6b7c29276a3dab4`)
+  - PhoneNumberKit
   - PromiseKit
   - SloppySwiper (from `https://github.com/glassoff/SloppySwiper.git`, branch `aviasales`)
   - SnowplowTracker
@@ -168,20 +206,17 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
-    - Amplitude-iOS
+    - AmazonAd
     - APDAmazonAdsAdapter
     - Appodeal
     - AutoCoding
     - BZipCompression
     - ClusterKit
-    - COSTouchVisualizer
-    - DynamicBlurView
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseInstallations
-    - Flurry-iOS-SDK
     - FMDB
     - GoogleAppMeasurement
     - GoogleDataTransport
@@ -196,11 +231,14 @@ SPEC REPOS:
     - PhoneNumberKit
     - PromiseKit
     - PromisesObjC
+    - Protobuf
     - PureLayout
     - ReachabilitySwift
     - SDWebImage
     - Smartling.i18n
     - SnowplowTracker
+    - StackIAB
+    - StackModules
     - SwiftProtobuf
     - TTTAttributedLabel
     - UIImageViewAligned
@@ -209,13 +247,10 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   AviasalesKit:
-    :podspec: https://ios.aviasales.ru/cocoapods/AviasalesKit_6.4.podspec
+    :podspec: https://ios.aviasales.ru/cocoapods/AviasalesKit_6.5.podspec
   CollectionSwipableCellExtension:
     :commit: d3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0
     :git: https://github.com/KosyanMedia/CollectionSwipableCellExtension.git
-  MagicalRecord:
-    :git: https://github.com/KosyanMedia/MagicalRecord.git
-    :tag: v2.4.0-xcode12
   Neon:
     :commit: 3770df30ee072a728becb8f1f6b7c29276a3dab4
     :git: https://github.com/KosyanMedia/Neon.git
@@ -227,9 +262,6 @@ CHECKOUT OPTIONS:
   CollectionSwipableCellExtension:
     :commit: d3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0
     :git: https://github.com/KosyanMedia/CollectionSwipableCellExtension.git
-  MagicalRecord:
-    :git: https://github.com/KosyanMedia/MagicalRecord.git
-    :tag: v2.4.0-xcode12
   Neon:
     :commit: 3770df30ee072a728becb8f1f6b7c29276a3dab4
     :git: https://github.com/KosyanMedia/Neon.git
@@ -239,50 +271,49 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Amplitude-iOS: 7d8cdc3408ba35c2e68368fc7c692cd104606b94
-  APDAmazonAdsAdapter: 8ceaa5b28bd5692a5a283a0e0dd8b258fc383f24
-  Appodeal: 046c13fdb4a214050224a0693f52bef427b88abe
+  AmazonAd: 9adf416ea36ca2325ce2040c0cf124f071089904
+  APDAmazonAdsAdapter: 110dfc7678552b8d20e912b02cbd5366a125bf9a
+  Appodeal: 3a7741d2bd3e7a1960f659c05e040c60b43d0904
   AutoCoding: 90ca3cbc0d77a37cfff75167d705b44148c5fc51
-  AviasalesKit: 1140a472122cb84538b6f650112d18a38ae17fad
+  AviasalesKit: cf0fea800d7ea86532ce6387b926dcd1bfd5d77c
   BZipCompression: e0f96508e60eb93b5f5d4c7de1eb3dd0ac4f9ae9
   ClusterKit: a52f2c5f79ca1c0b2db63c4f0cd51fdb3e2d8cba
   CollectionSwipableCellExtension: 7f7090dd8941be6ddc0a39bdd8f6204c2d07fe41
-  COSTouchVisualizer: a398089327a6c02897823614d7447ccc97198997
-  DynamicBlurView: b57e2f6aa33f85b2bcca272265162a3c7c5cc499
-  Firebase: 8db6f2d1b2c5e2984efba4949a145875a8f65fe5
-  FirebaseAnalytics: 5dd088bd2e67bb9d13dbf792d1164ceaf3052193
-  FirebaseCore: d889d9e12535b7f36ac8bfbf1713a0836a3012cd
-  FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
-  FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
-  Flurry-iOS-SDK: 88c0399d6d276325dc9f74f6183c1070e6c3f21e
+  Firebase: d8bd6bd34b4c7ed57bfdd056c66ff5adcdde53ab
+  FirebaseAnalytics: 31b1269830dfe16687db3c60b76082c12bd6d527
+  FirebaseCore: 0798738ad1ae0fda67e17c7b9081241c431c6859
+  FirebaseCoreDiagnostics: 3d36e05da74cb8b7ce30e6594a8f201b982c725c
+  FirebaseInstallations: a58d4f72ec5861840b84df489f2668d970df558a
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  GoogleAppMeasurement: 966e88df9d19c15715137bb2ddaf52373f111436
-  GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
-  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
+  GoogleAppMeasurement: 120eec8803fe65a4a7475fb3d3d59a61d0e1a866
+  GoogleDataTransport: 8b0e733ea77c9218778e5a9e34ba9508b8328939
+  GoogleUtilities: f8a43108b38a68eebe8b3540e1f4f2d28843ce20
   GRMustache: ebe6104fd30a6d22c1f36af131e19e2dbf7cd292
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
   JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
   KeychainSwift: 9f43f562dffc88af6efadb57d74b14c598eb337f
-  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
-  MagicalRecord: 1f22a766156474d9f46a9b1e1ce59ca9e37830fc
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
-  PhoneNumberKit: ff153d5e299f6da566cb73c6aa71e354933b2932
+  PhoneNumberKit: 4ce83273551c4d2ae10b7361162f4283dd02835f
   PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
-  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
-  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
+  PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  Protobuf: 7327d4444215b5f18e560a97f879ff5503c4581c
+  PureLayout: e9e5921347547e1068333f3149e737c972cb6037
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
-  SDWebImage: 0b42b8719ab0c5257177d5894306e8a336b21cbb
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   SloppySwiper: 37e38f6da8df5c805914c6f32ec6ec8da63abe7c
   Smartling.i18n: 0d508b89a2a12f0e070e6369e4dcdcf46ae2d59f
   SnowplowTracker: 22912aa09f8e7bc205f3d870f1e906bf223b9583
-  SwiftProtobuf: 4ef85479c18ca85b5482b343df9c319c62bda699
+  StackIAB: 39e22a69660851170aa4696c678242b79bfe88b7
+  StackModules: 7c03ececc0b938d8e4ca6bb8728414deee48c867
+  SwiftProtobuf: 3320217e9d8fb75f36b40282e78c482640fd75dd
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIImageViewAligned: 73030dd085400e1ae7641203b5cc1546fa0495a8
   "UIView+Shake": 055ad67721de1f74d29c0a1d464697e505dfc62f
   YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
 
-PODFILE CHECKSUM: 849c9376b2b67e3d59df2837c9523dbe3ea51ef8
+PODFILE CHECKSUM: c7154fc3ffb7f1e38ba694af8023514b7b77cfe1
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

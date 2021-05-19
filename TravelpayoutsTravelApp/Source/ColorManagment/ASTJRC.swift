@@ -2,7 +2,7 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import Foundation
-import AviasalesKit
+import GTUDesignKit
 
 class ASTJRC: JRC {
 
@@ -11,15 +11,9 @@ class ASTJRC: JRC {
         JRC.overrideCurrent(instance)
     }
 
+    // Theme colors were moved to default_config.plist
+
     // MARK: Overrides
-
-    override func THEME_COLOR() -> UIColor {
-        return ColorSchemeManager.shared.current.mainColor
-    }
-
-    override func SECOND_THEME_COLOR() -> UIColor {
-        return ColorSchemeManager.shared.current.actionColor
-    }
 
     // Color override example
 //    override func SEARCH_FORM_BACKGROUND() -> UIColor {

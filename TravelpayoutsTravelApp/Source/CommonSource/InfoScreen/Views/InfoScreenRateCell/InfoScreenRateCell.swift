@@ -2,7 +2,6 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import GTUUIKit
-import JRCommonUtils
 
 protocol InfoScreenRateCellProtocol {
     var name: String? { get }

@@ -82,5 +82,12 @@
 			</dict>
 		</array>
 	</dict>
+	<key>color_params</key>
+	<dict>
+		<key>main_color</key>
+		<string>#9C6CBE</string>
+		<key>action_color</key>
+		<string>#CE0755</string>
+	</dict>
 </dict>
 </plist>

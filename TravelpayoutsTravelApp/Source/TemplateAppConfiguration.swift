@@ -2,7 +2,8 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import Foundation
-import AviasalesKit
+import JRFlights
+import JRMainScene
 import ASTemplateConfiguration
 
 class TemplateAppConfiguration: TemplateAppConfigurationProtocol {
@@ -16,10 +17,6 @@ class TemplateAppConfiguration: TemplateAppConfigurationProtocol {
 
     func isApplicationTerminating() -> Bool {
         return appDelegate.isTerminating
-    }
-
-    func createWaitingScreen(with searchInfo: JRSDKSearchInfo, searchSession: JRSearchSession, delegate: JRWaitingScreenDelegate, router: JRRouterProtocol) -> JRViewController {
-        return TemplateAppWaitingScreenViewController(searchInfo: searchInfo, searchSession: searchSession, delegate: delegate, router: router, adsManager: AppodealAdsManager())
     }
 
     func additionalTabBarItemsFactory() -> AdditionalTabBarItemsFactoryProtocol? {
@@ -73,6 +70,7 @@ private class TabBarViewControllerTabItem: NSObject, JRTabBarViewControllerTabIt
     let type: JRTabBarViewControllerTabItemType
     let title: String!
     let icon: UIImage!
+    var accessibilityIdentifier: String?
 
     init(type: JRTabBarViewControllerTabItemType,
          title: String,

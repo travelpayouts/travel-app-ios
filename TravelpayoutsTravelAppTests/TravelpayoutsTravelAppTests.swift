@@ -2,8 +2,7 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import XCTest
-import AviasalesSDK
-import AviasalesKit
+import JRFlights
 
 class TravelpayoutsTravelAppTests: XCTestCase {
 

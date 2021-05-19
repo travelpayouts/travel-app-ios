@@ -14,11 +14,6 @@
 		7573681B398C6D04C4CD3CAC /* Pods_TravelpayoutsTravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B098AE253B4FF377B2B6A383 /* Pods_TravelpayoutsTravelApp.framework */; };
 		BDC87C5D2F916B0E16727839 /* Pods_SampleFlightsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B0F2337CCDD8336ED3B267 /* Pods_SampleFlightsApp.framework */; };
 		CE19A3C52434F39100A30320 /* SampleFlightsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19A3C42434F39100A30320 /* SampleFlightsAppTests.swift */; };
-		CE35D7FA22983B0300EF8901 /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D73222983B0300EF8901 /* ColorSchemeManager.swift */; };
-		CE35D7FB22983B0300EF8901 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D73422983B0300EF8901 /* ColorScheme.swift */; };
-		CE35D7FD22983B0300EF8901 /* BlackColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D73622983B0300EF8901 /* BlackColorScheme.swift */; };
-		CE35D7FE22983B0300EF8901 /* PurpleColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D73722983B0300EF8901 /* PurpleColorScheme.swift */; };
-		CE35D7FF22983B0300EF8901 /* CustomColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D73822983B0300EF8901 /* CustomColorScheme.swift */; };
 		CE35D81322983B0300EF8901 /* InfoScreenDetailCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D75B22983B0300EF8901 /* InfoScreenDetailCellModel.swift */; };
 		CE35D81422983B0300EF8901 /* InfoScreenCellModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D75C22983B0300EF8901 /* InfoScreenCellModelProtocol.swift */; };
 		CE35D81522983B0300EF8901 /* InfoScreenVersionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D75D22983B0300EF8901 /* InfoScreenVersionCellModel.swift */; };
@@ -83,6 +78,8 @@
 		0B55F0ED1CDC9C2AA4BEBAFD /* Pods-TravelpayoutsTravelApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelApp.release.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp.release.xcconfig"; sourceTree = "<group>"; };
 		460381E6241B9F9300089A52 /* AppodealAdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppodealAdsManager.swift; sourceTree = "<group>"; };
 		4693D2C6240FD3CF0036AACE /* TemplateAppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAppConfiguration.swift; sourceTree = "<group>"; };
+		46CC90E6254C32D50030925E /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46CC90EE254C32D60030925E /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
 		46DC5E362424CDDF00C110E1 /* default_config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = default_config.plist; sourceTree = "<group>"; };
 		6CA826E536DF850222CAE0B4 /* Pods-TravelpayoutsTravelAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelpayoutsTravelAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TravelpayoutsTravelAppTests/Pods-TravelpayoutsTravelAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		72B0F2337CCDD8336ED3B267 /* Pods_SampleFlightsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleFlightsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,11 +90,6 @@
 		CE19A3C22434F39100A30320 /* SampleFlightsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFlightsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE19A3C42434F39100A30320 /* SampleFlightsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFlightsAppTests.swift; sourceTree = "<group>"; };
 		CE19A3C62434F39100A30320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE35D73222983B0300EF8901 /* ColorSchemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
-		CE35D73422983B0300EF8901 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
-		CE35D73622983B0300EF8901 /* BlackColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackColorScheme.swift; sourceTree = "<group>"; };
-		CE35D73722983B0300EF8901 /* PurpleColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurpleColorScheme.swift; sourceTree = "<group>"; };
-		CE35D73822983B0300EF8901 /* CustomColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorScheme.swift; sourceTree = "<group>"; };
 		CE35D75B22983B0300EF8901 /* InfoScreenDetailCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenDetailCellModel.swift; sourceTree = "<group>"; };
 		CE35D75C22983B0300EF8901 /* InfoScreenCellModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenCellModelProtocol.swift; sourceTree = "<group>"; };
 		CE35D75D22983B0300EF8901 /* InfoScreenVersionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenVersionCellModel.swift; sourceTree = "<group>"; };
@@ -282,22 +274,9 @@
 			isa = PBXGroup;
 			children = (
 				CE900A0A22A5327700330E56 /* ASTColorScheme.swift */,
-				CE35D73222983B0300EF8901 /* ColorSchemeManager.swift */,
 				CE900A0C22A5389E00330E56 /* ASTJRC.swift */,
-				CE35D73322983B0300EF8901 /* ColorSchemes */,
 			);
 			path = ColorManagment;
-			sourceTree = "<group>";
-		};
-		CE35D73322983B0300EF8901 /* ColorSchemes */ = {
-			isa = PBXGroup;
-			children = (
-				CE35D73422983B0300EF8901 /* ColorScheme.swift */,
-				CE35D73622983B0300EF8901 /* BlackColorScheme.swift */,
-				CE35D73722983B0300EF8901 /* PurpleColorScheme.swift */,
-				CE35D73822983B0300EF8901 /* CustomColorScheme.swift */,
-			);
-			path = ColorSchemes;
 			sourceTree = "<group>";
 		};
 		CE35D74022983B0300EF8901 /* CommonSource */ = {
@@ -627,6 +606,7 @@
 				pt,
 				"pt-PT",
 				ar,
+				ro,
 			);
 			mainGroup = CEAAD38C223A80A900E7C5D8;
 			productRefGroup = CEAAD396223A80A900E7C5D8 /* Products */;
@@ -824,7 +804,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE35D81522983B0300EF8901 /* InfoScreenVersionCellModel.swift in Sources */,
-				CE35D7FA22983B0300EF8901 /* ColorSchemeManager.swift in Sources */,
 				CE900A0722A153F400330E56 /* InfoScreenRouter.swift in Sources */,
 				CECC2EC622D5F964003F3996 /* HLAlertsFabric.m in Sources */,
 				CE35D83B22983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift in Sources */,
@@ -835,14 +814,10 @@
 				CE35D81B22983B0300EF8901 /* InfoScreenViewController.swift in Sources */,
 				CE900A0B22A5327700330E56 /* ASTColorScheme.swift in Sources */,
 				CE35D84222983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift in Sources */,
-				CE35D7FF22983B0300EF8901 /* CustomColorScheme.swift in Sources */,
-				CE35D7FB22983B0300EF8901 /* ColorScheme.swift in Sources */,
 				460381E7241B9F9300089A52 /* AppodealAdsManager.swift in Sources */,
-				CE35D7FE22983B0300EF8901 /* PurpleColorScheme.swift in Sources */,
 				CE35D82322983B0300EF8901 /* InfoScreenVersionCell.swift in Sources */,
 				CE900A0D22A5389E00330E56 /* ASTJRC.swift in Sources */,
 				CE35D81822983B0300EF8901 /* InfoScreenAboutCellModel.swift in Sources */,
-				CE35D7FD22983B0300EF8901 /* BlackColorScheme.swift in Sources */,
 				CED20042231D42580010A8EB /* AppLocalizations.swift in Sources */,
 				CE35D83422983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift in Sources */,
 				CE35D881229BF84A00EF8901 /* HLMailComposeVC.m in Sources */,
@@ -918,6 +893,7 @@
 				CE35D8CD229BF9A900EF8901 /* pt */,
 				CE35D8D0229BF9A900EF8901 /* pt-PT */,
 				CEDD058023674787003E9C3A /* ar */,
+				46CC90E6254C32D50030925E /* ro */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -950,6 +926,7 @@
 				CED2005D231D45950010A8EB /* tr */,
 				CED2005E231D45960010A8EB /* vi */,
 				CEDD058123674788003E9C3A /* ar */,
+				46CC90EE254C32D60030925E /* ro */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -976,7 +953,6 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SampleFlightsAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1003,7 +979,6 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SampleFlightsAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1069,7 +1044,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1123,7 +1098,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1138,13 +1113,13 @@
 			baseConfigurationReference = 09FA86A706F9E1C98E3C707F /* Pods-TravelpayoutsTravelApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 6.4;
+				CURRENT_PROJECT_VERSION = 6.5;
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.4;
+				MARKETING_VERSION = 6.5;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelpayoutsTravelApp/Source/TravelpayoutsTravelApp-Bridging-Header.h";
@@ -1158,13 +1133,13 @@
 			baseConfigurationReference = 0B55F0ED1CDC9C2AA4BEBAFD /* Pods-TravelpayoutsTravelApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 6.4;
+				CURRENT_PROJECT_VERSION = 6.5;
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.4;
+				MARKETING_VERSION = 6.5;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelpayoutsTravelApp/Source/TravelpayoutsTravelApp-Bridging-Header.h";
@@ -1184,7 +1159,6 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TravelpayoutsTravelAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1211,7 +1185,6 @@
 				DEVELOPMENT_TEAM = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TravelpayoutsTravelAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

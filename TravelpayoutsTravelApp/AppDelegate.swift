@@ -2,7 +2,8 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import UIKit
-import AviasalesKit
+import JRMainScene
+import JRHotellookIntegration
 import Appodeal
 import ASTemplateConfiguration
 
@@ -11,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var mainRouter: JRMainRouter!
+    private let hotelsTabBarManager = JRHLTabBarManager()
     var isTerminating = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -18,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         validateConfig()
 
-        TemplateAppConfigurator.configure(configuration: TemplateAppConfiguration())
+        TemplateAppConfigurator.configure(configuration: TemplateAppConfiguration(), hotelsTabBarManager: hotelsTabBarManager)
 
         Appodeal.initialize(withApiKey: ConfigManager.shared.appodealKey, types: .interstitial)
         ASTJRC.setup()
@@ -29,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         mainRouter = JRMainRouter()
 
-        TemplateAppConfigurator.configurePostRouterSetup(window: window)
+        TemplateAppConfigurator.configurePostRouterSetup(window: window, hotelsTabBarManager: hotelsTabBarManager)
 
         mainRouter.start(with: window, splashScreen: false)
 

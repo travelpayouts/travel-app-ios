@@ -2,7 +2,7 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import Foundation
-import AviasalesKit
+import JRSharedServices
 import ASTemplateConfiguration
 
 protocol InfoScreenViewProtocol: AnyObject {

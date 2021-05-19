@@ -34,7 +34,7 @@ You can get the partner marker and API token on our website: [Travelpayouts](htt
 8. Publish the app via [App Store Connect](https://appstoreconnect.apple.com)
 
 ### 📱 iOS versions support
-Application supports iOS 11.0 and higher
+Application supports iOS 12.0 and higher
 
 ### 🖼 App Icon
 **Do not forget to replace app icons** (Template project includes simple white icons by default). To do this you will need to replace icons in ```TravelpayoutsTravelApp/AppIcon.xcassets/AppIcon.appiconset``` folder (20.png, 29.png, 40.png etc) with your own icons with same names.
@@ -44,13 +44,13 @@ Application supports iOS 11.0 and higher
 2. You can add Car Rental tab. To do this you need to join one car rental affiliate program from [Travelpayouts programs](https://www.travelpayouts.com/programs). Then you will need to generate an affiliate link and add it to the ```TravelpayoutsTravelApp/default_config.plist``` file to parameter ```car_rental_link```. **Note**: Don't use Economybookings, because this program can't track a mobile traffic.
 
 ### 🔧🌻 Color customization
-You can choose color scheme in ```ColorSchemeManager.swift``` file. Just add to ```current``` variable one of these values: BlackColorScheme() / PurpleColorScheme(). Or set CustomColorScheme() value and set up any color scheme you need in ```CustomColorScheme.swift``` file.
-Here is a list of primary fields with explanations:
+You can choose color scheme in ```default_config.plist``` file.
+Here is a list of color scheme settings with explanations:
 
 |Title|Description|
 |--------|--------|
-mainColor | Primary app color
-actionColor | Actions highlight color
+main_color | Primary app color
+action_color | Actions highlight color
 
 Fine-grained color customization can be configured in file ```ASTJRC.swift``` by overriding colors from the base class ```JRC```.
 
@@ -59,6 +59,7 @@ You can change search forms titles in ```AppLocalizations.swift``` file. Uncomme
 
 ### 🤑 Appodeal ads setup
 To get additional profit from ads, we've integrated Mobile Ads [Appodeal SDK](https://www.appodeal.com/) in the app. To configure it, specify the ```appodeal_key``` parameter in the ```default_config.plist``` file (get your API key by registering at [Appodeal](https://www.appodeal.com/)). Ads will appear on the waiting screens for tickets and hotels searching by default.
+Don't forget to enable all ad modules for Appodeal. To do this edit the ```Podfile``` file, uncomment the ```pod 'APD...``` lines and execute ```bundle exec pod install``` in the terminal.
 
 ### ⭐️ Feedback
 Set up the ```feedback_email``` and ```itunes_link``` parameters in ```default_config.plist``` file to activate "Contact us" and "Rate this app" links.
@@ -77,7 +78,7 @@ To track statistics and payments, please visit our affiliate network website —
 To learn more about the Travelpayouts affiliate network, please visit [Travelpayouts FAQ](https://support.travelpayouts.com/hc/en-us/articles/203955613-Commission-and-payments).
 
 ## Library integration
-App should support iOS 11 or newer as the minimum iOS version, and it should support Swift language. If your app is written in Objective-C you can wrap all library calls in a class which will be available in Objective-C.
+App should support iOS 12.0 or newer as the minimum iOS version, and it should support Swift language. If your app is written in Objective-C you can wrap all library calls in a class which will be available in Objective-C.
 
 ### Add CocoaPods dependencies
 Add the following function with dependencies to Podfile
@@ -88,7 +89,6 @@ def aviasales_kit_dependencies
     # forked AviasalesKit dependencies
     pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
     pod "SloppySwiper", git: 'https://github.com/glassoff/SloppySwiper.git', branch: 'aviasales'
-    pod 'MagicalRecord', git: 'https://github.com/KosyanMedia/MagicalRecord.git', tag: 'v2.4.0-xcode12'
     pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3770df30ee072a728becb8f1f6b7c29276a3dab4'
 
     # suppress warnings
@@ -96,7 +96,6 @@ def aviasales_kit_dependencies
     pod 'BZipCompression', inhibit_warnings: true
     pod 'GRMustache', inhibit_warnings: true
     pod 'PromiseKit', inhibit_warnings: true
-    pod 'COSTouchVisualizer', inhibit_warnings: true
     pod 'SnowplowTracker', inhibit_warnings: true
 end
 ```

@@ -1,8 +1,8 @@
 // Copyright 2019 Go Travel Un Limited
 // This code is distributed under the terms and conditions of the MIT license.
 
-import AviasalesKit
 import HotellookSDK
+import HotellookKit
 import ASTemplateConfiguration
 
 extension HLDefaultCitiesFactory {

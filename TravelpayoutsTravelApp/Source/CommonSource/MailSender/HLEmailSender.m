@@ -2,10 +2,9 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 #import <sys/utsname.h>
-#import <AviasalesKit/AviasalesKit.h>
 #import <HotellookSDK/HotellookSDK-Swift.h>
-#import <ASTemplateConfiguration/ASTemplateConfiguration.h>
-#import "BZipCompression.h"
+#import <ASTemplateConfiguration/ASTemplateConfiguration-Swift.h>
+#import <BZipCompression/BZipCompression.h>
 #import "HLEmailSender.h"
 #import "HLAlertsFabric.h"
 
