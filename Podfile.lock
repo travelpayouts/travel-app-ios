@@ -9,7 +9,7 @@ PODS:
     - StackIAB (~> 1.2.0)
     - StackModules (~> 1.0.3)
   - AutoCoding (2.2.3)
-  - AviasalesKit (6.5):
+  - AviasalesKit (6.5.1):
     - Alamofire (= 4.9.1)
     - AutoCoding (= 2.2.3)
     - BZipCompression (= 1.0.2)
@@ -191,7 +191,7 @@ DEPENDENCIES:
   - Alamofire
   - APDAmazonAdsAdapter (= 2.9.1.1)
   - Appodeal (= 2.9.1)
-  - AviasalesKit (from `https://ios.aviasales.ru/cocoapods/AviasalesKit_6.5.podspec`)
+  - AviasalesKit (from `https://ios.aviasales.ru/cocoapods/AviasalesKit_6.5.1.podspec`)
   - BZipCompression
   - CollectionSwipableCellExtension (from `https://github.com/KosyanMedia/CollectionSwipableCellExtension.git`, commit `d3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0`)
   - GRMustache
@@ -247,7 +247,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   AviasalesKit:
-    :podspec: https://ios.aviasales.ru/cocoapods/AviasalesKit_6.5.podspec
+    :podspec: https://ios.aviasales.ru/cocoapods/AviasalesKit_6.5.1.podspec
   CollectionSwipableCellExtension:
     :commit: d3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0
     :git: https://github.com/KosyanMedia/CollectionSwipableCellExtension.git
@@ -275,7 +275,7 @@ SPEC CHECKSUMS:
   APDAmazonAdsAdapter: 110dfc7678552b8d20e912b02cbd5366a125bf9a
   Appodeal: 3a7741d2bd3e7a1960f659c05e040c60b43d0904
   AutoCoding: 90ca3cbc0d77a37cfff75167d705b44148c5fc51
-  AviasalesKit: cf0fea800d7ea86532ce6387b926dcd1bfd5d77c
+  AviasalesKit: fba030c016aa338384f31931b50f245180c42a31
   BZipCompression: e0f96508e60eb93b5f5d4c7de1eb3dd0ac4f9ae9
   ClusterKit: a52f2c5f79ca1c0b2db63c4f0cd51fdb3e2d8cba
   CollectionSwipableCellExtension: 7f7090dd8941be6ddc0a39bdd8f6204c2d07fe41
@@ -314,6 +314,6 @@ SPEC CHECKSUMS:
   "UIView+Shake": 055ad67721de1f74d29c0a1d464697e505dfc62f
   YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
 
-PODFILE CHECKSUM: c7154fc3ffb7f1e38ba694af8023514b7b77cfe1
+PODFILE CHECKSUM: 879dcb890a6e2a58088a2ccd7a76906ab770c8da
 
 COCOAPODS: 1.10.1

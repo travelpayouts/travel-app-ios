@@ -38,6 +38,10 @@ class TemplateAppConfiguration: TemplateAppConfigurationProtocol {
     func enableSettingsButtonOnSearchForms() -> Bool {
         false
     }
+
+    func adsManager() -> AdsManagerProtocol? {
+        AppodealAdsManager()
+    }
 }
 
 private extension TemplateAppConfiguration {
