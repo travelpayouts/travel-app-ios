@@ -18,7 +18,7 @@
 		CE35D81422983B0300EF8901 /* InfoScreenCellModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D75C22983B0300EF8901 /* InfoScreenCellModelProtocol.swift */; };
 		CE35D81522983B0300EF8901 /* InfoScreenVersionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D75D22983B0300EF8901 /* InfoScreenVersionCellModel.swift */; };
 		CE35D81622983B0300EF8901 /* InfoScreenBasicCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D75E22983B0300EF8901 /* InfoScreenBasicCellModel.swift */; };
-		CE35D81722983B0300EF8901 /* InfoScreenExtrnalCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D75F22983B0300EF8901 /* InfoScreenExtrnalCellModel.swift */; };
+		CE35D81722983B0300EF8901 /* InfoScreenExternalCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D75F22983B0300EF8901 /* InfoScreenExternalCellModel.swift */; };
 		CE35D81822983B0300EF8901 /* InfoScreenAboutCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D76022983B0300EF8901 /* InfoScreenAboutCellModel.swift */; };
 		CE35D81922983B0300EF8901 /* InfoScreenRateCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D76122983B0300EF8901 /* InfoScreenRateCellModel.swift */; };
 		CE35D81A22983B0300EF8901 /* InfoScreenIconImageViewFiveTimesTapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D76222983B0300EF8901 /* InfoScreenIconImageViewFiveTimesTapHandler.swift */; };
@@ -94,7 +94,7 @@
 		CE35D75C22983B0300EF8901 /* InfoScreenCellModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenCellModelProtocol.swift; sourceTree = "<group>"; };
 		CE35D75D22983B0300EF8901 /* InfoScreenVersionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenVersionCellModel.swift; sourceTree = "<group>"; };
 		CE35D75E22983B0300EF8901 /* InfoScreenBasicCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenBasicCellModel.swift; sourceTree = "<group>"; };
-		CE35D75F22983B0300EF8901 /* InfoScreenExtrnalCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenExtrnalCellModel.swift; sourceTree = "<group>"; };
+		CE35D75F22983B0300EF8901 /* InfoScreenExternalCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenExternalCellModel.swift; sourceTree = "<group>"; };
 		CE35D76022983B0300EF8901 /* InfoScreenAboutCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenAboutCellModel.swift; sourceTree = "<group>"; };
 		CE35D76122983B0300EF8901 /* InfoScreenRateCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenRateCellModel.swift; sourceTree = "<group>"; };
 		CE35D76222983B0300EF8901 /* InfoScreenIconImageViewFiveTimesTapHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenIconImageViewFiveTimesTapHandler.swift; sourceTree = "<group>"; };
@@ -311,7 +311,7 @@
 				CE35D75E22983B0300EF8901 /* InfoScreenBasicCellModel.swift */,
 				CE35D75C22983B0300EF8901 /* InfoScreenCellModelProtocol.swift */,
 				CE35D75B22983B0300EF8901 /* InfoScreenDetailCellModel.swift */,
-				CE35D75F22983B0300EF8901 /* InfoScreenExtrnalCellModel.swift */,
+				CE35D75F22983B0300EF8901 /* InfoScreenExternalCellModel.swift */,
 				CE35D76122983B0300EF8901 /* InfoScreenRateCellModel.swift */,
 				CE35D75D22983B0300EF8901 /* InfoScreenVersionCellModel.swift */,
 			);
@@ -501,6 +501,7 @@
 				CEAAD392223A80A900E7C5D8 /* Frameworks */,
 				CEAAD393223A80A900E7C5D8 /* Resources */,
 				377106953E320ED7A46165CD /* [CP] Copy Pods Resources */,
+				6C456EC9E1C4964114283675 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -556,7 +557,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Go Travel Un Limited";
 				TargetAttributes = {
 					CE19A3C12434F39100A30320 = {
@@ -744,6 +745,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6C456EC9E1C4964114283675 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelpayoutsTravelApp/Pods-TravelpayoutsTravelApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8391359D2C7ADEED026EBB91 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -827,7 +845,7 @@
 				CE35D880229BF84A00EF8901 /* HLEmailSender.m in Sources */,
 				CE35D81A22983B0300EF8901 /* InfoScreenIconImageViewFiveTimesTapHandler.swift in Sources */,
 				CE35D81F22983B0300EF8901 /* InfoScreenAboutCell.swift in Sources */,
-				CE35D81722983B0300EF8901 /* InfoScreenExtrnalCellModel.swift in Sources */,
+				CE35D81722983B0300EF8901 /* InfoScreenExternalCellModel.swift in Sources */,
 				CE35D81622983B0300EF8901 /* InfoScreenBasicCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1019,6 +1037,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1044,7 +1063,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1079,6 +1098,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1098,7 +1118,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1113,13 +1133,13 @@
 			baseConfigurationReference = 09FA86A706F9E1C98E3C707F /* Pods-TravelpayoutsTravelApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 6.5;
+				CURRENT_PROJECT_VERSION = 6.6;
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.5;
+				MARKETING_VERSION = 6.6;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelpayoutsTravelApp/Source/TravelpayoutsTravelApp-Bridging-Header.h";
@@ -1133,13 +1153,13 @@
 			baseConfigurationReference = 0B55F0ED1CDC9C2AA4BEBAFD /* Pods-TravelpayoutsTravelApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 6.5;
+				CURRENT_PROJECT_VERSION = 6.6;
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.5;
+				MARKETING_VERSION = 6.6;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelpayoutsTravelApp/Source/TravelpayoutsTravelApp-Bridging-Header.h";

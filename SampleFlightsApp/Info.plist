@@ -29,6 +29,8 @@
 		<key>NSAllowsArbitraryLoadsInWebContent</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Some ad content may access camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Used to find nearby hotels.</string>
 	<key>UILaunchStoryboardName</key>

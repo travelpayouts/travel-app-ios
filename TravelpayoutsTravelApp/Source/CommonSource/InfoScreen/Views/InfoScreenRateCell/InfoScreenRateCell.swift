@@ -1,7 +1,7 @@
 // Copyright 2019 Go Travel Un Limited
 // This code is distributed under the terms and conditions of the MIT license.
 
-import GTUUIKit
+import LibraryUIKitHelpers
 
 protocol InfoScreenRateCellProtocol {
     var name: String? { get }

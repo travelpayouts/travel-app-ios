@@ -3,6 +3,7 @@
 
 import UIKit
 import JRFlights
+import SharedNavigation
 
 class InfoScreenViewController: JRViewController, InfoScreenIconImageViewFiveTimesTapHandler, JRSceneViewControllerProtocol {
 
@@ -98,7 +99,7 @@ private extension InfoScreenViewController {
         return cell
     }
 
-    func buildExternalCell(cellModel: InfoScreenExtrnalCellModel) -> UITableViewCell {
+    func buildExternalCell(cellModel: InfoScreenExternalCellModel) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.backgroundColor = .clear
         cell.textLabel?.text = cellModel.name
@@ -157,7 +158,7 @@ extension InfoScreenViewController: UITableViewDataSource {
             case .email:
                 return buildBasicCell(cellModel: cellModel as! InfoScreenBasicCellModel)
             case .external:
-                return buildExternalCell(cellModel: cellModel as! InfoScreenExtrnalCellModel)
+                return buildExternalCell(cellModel: cellModel as! InfoScreenExternalCellModel)
             case .version:
                 return buildVersionCell(cellModel: cellModel as! InfoScreenVersionCellModel)
         }

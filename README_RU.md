@@ -36,7 +36,7 @@ Travelpayouts Travel App iOS
 8. Опубликуйте приложение через [App Store Connect](https://appstoreconnect.apple.com).
 
 ### 📱 Поддержка версий iOS
-Поддерживаются версии, начиная с iOS 12.0.
+Поддерживаются версии, начиная с iOS 13.0.
 
 ### 🖼 Иконка приложения
 **Не забудьте заменить иконку приложения** (по умолчанию, в шаблоне используются иконки, залитые белым цветом). Для этого в папке ```TravelpayoutsTravelApp/AppIcon.xcassets/AppIcon.appiconset``` достаточно заменить картинки (20.png, 29.png, 40.png и т.д.) на свои с аналогичными именами.
@@ -51,8 +51,8 @@ Travelpayouts Travel App iOS
 
 |Название|Описание|
 |--------|--------|
-main_сolor | Основной цвет приложения
-action_сolor | Цвет выделения основных действий
+main_color | Основной цвет приложения
+action_color | Цвет выделения основных действий
 
 Более детально настроить цвета можно в файле ```ASTJRC.swift``` путем переопределения методов базового класса ```JRC```.
 
@@ -81,23 +81,21 @@ action_сolor | Цвет выделения основных действий
 Узнайте подробнее о доходах в [базе знаний Travelpayouts](https://support.travelpayouts.com/hc/ru/articles/203955613-Комиссия-и-выплаты).
 
 ### Интеграция библиотеки
-Приложение должно требовать версию iOS не ниже 12.0 и поддерживать Swift. Если вы используете Objective-C, то можете завернуть все обращения к библиотеке в класс, который будет доступен из Objective-C.
+Приложение должно требовать версию iOS не ниже 13.0 и поддерживать Swift. Если вы используете Objective-C, то можете завернуть все обращения к библиотеке в класс, который будет доступен из Objective-C.
 
 ### Добавление зависимости в CocoaPods
 Добавьте функцию с зависимостями в Podfile
 ```ruby
 def aviasales_kit_dependencies
-    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.3.podspec'
+    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.podspec'
 
     # forked AviasalesKit dependencies
     pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
-    pod "SloppySwiper", git: 'https://github.com/glassoff/SloppySwiper.git', branch: 'aviasales'
     pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3770df30ee072a728becb8f1f6b7c29276a3dab4'
 
     # suppress warnings
     pod 'TTTAttributedLabel', inhibit_warnings: true
     pod 'BZipCompression', inhibit_warnings: true
-    pod 'GRMustache', inhibit_warnings: true
     pod 'PromiseKit', inhibit_warnings: true
     pod 'SnowplowTracker', inhibit_warnings: true
 end

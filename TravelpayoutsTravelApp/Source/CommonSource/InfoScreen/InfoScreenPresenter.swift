@@ -23,13 +23,6 @@ class InfoScreenPresenter {
         self.view = view
         view.set(title: TemplateAppLocalizations.shared.informationTabTitle)
         view.set(cellModels: buildCellModels())
-
-        currencyObserver = currencyObserver ?? NotificationCenter.default
-            .addObserver(forName: .init(kJRUserSettingsDidChangeCurrencyNotificationName),
-                         object: nil,
-                         queue: .main) { [weak self] _ in
-                self?.update()
-            }
     }
 
     deinit {
@@ -52,17 +45,13 @@ class InfoScreenPresenter {
             case .email:
                 view?.sendEmail(address: ConfigManager.shared.feedbackEmail)
             case .external:
-                openURL(from: cellModel as! InfoScreenExtrnalCellModel)
+                openURL(from: cellModel as! InfoScreenExternalCellModel)
             case .about, .rate, .version:
                 return
         }
     }
 
-    func update() {
-        view?.set(cellModels: buildCellModels())
-    }
-
-    private func openURL(from cellModel: InfoScreenExtrnalCellModel) {
+    private func openURL(from cellModel: InfoScreenExternalCellModel) {
 
         guard let link = cellModel.url, let url = URL(string: link), let scheme = url.scheme, scheme.contains("http") else {
             return
@@ -130,7 +119,7 @@ private extension InfoScreenPresenter {
     }
 
     func buildExternalCellModels(from externalLinks: [ExternalLink]) -> [InfoScreenCellModelProtocol] {
-        return externalLinks.filter { !($0.name?.isEmpty ?? true) }.map { InfoScreenExtrnalCellModel(name: $0.name, url: $0.url) }
+        return externalLinks.filter { !($0.name?.isEmpty ?? true) }.map { InfoScreenExternalCellModel(name: $0.name, url: $0.url) }
     }
 
     func buildVersionCellModel() -> InfoScreenVersionCellModel {

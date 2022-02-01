@@ -60,12 +60,12 @@ private class AdditionalTabBarItemsFactory: NSObject, AdditionalTabBarItemsFacto
         return [infoItem]
     }
 
-    func sceneForTabWithItemType(_ type: JRTabBarViewControllerTabItemType) -> JRScene {
+    func sceneForTabWithItemType(_ type: JRTabBarViewControllerTabItemType, parentRouter: JRRouterProtocol) -> JRScene {
         switch type {
             case .mainViewControllerTabItemTypeCustom:
                 fallthrough
             default:
-                return InfoScreenViewController.scene(parentRouter: JRMainRouter.sharedInstance())
+                return InfoScreenViewController.scene(parentRouter: parentRouter)
         }
     }
 }

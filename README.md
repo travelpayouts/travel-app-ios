@@ -34,7 +34,7 @@ You can get the partner marker and API token on our website: [Travelpayouts](htt
 8. Publish the app via [App Store Connect](https://appstoreconnect.apple.com)
 
 ### 📱 iOS versions support
-Application supports iOS 12.0 and higher
+Application supports iOS 13.0 and higher
 
 ### 🖼 App Icon
 **Do not forget to replace app icons** (Template project includes simple white icons by default). To do this you will need to replace icons in ```TravelpayoutsTravelApp/AppIcon.xcassets/AppIcon.appiconset``` folder (20.png, 29.png, 40.png etc) with your own icons with same names.
@@ -55,7 +55,7 @@ action_color | Actions highlight color
 Fine-grained color customization can be configured in file ```ASTJRC.swift``` by overriding colors from the base class ```JRC```.
 
 ### 🔧📄 Text customization
-You can change search forms titles in ```AppLocalizations.swift``` file. Uncomment and edit a variable to change corresponding search form title. Title can be localized in multuple languages if you use ```NSLocalizedString``` and add all localizations to ```Localizable.strings``` files.
+You can change search forms titles in ```AppLocalizations.swift``` file. Uncomment and edit a variable to change corresponding search form title. Title can be localized in multiple languages if you use ```NSLocalizedString``` and add all localizations to ```Localizable.strings``` files.
 
 ### 🤑 Appodeal ads setup
 To get additional profit from ads, we've integrated Mobile Ads [Appodeal SDK](https://www.appodeal.com/) in the app. To configure it, specify the ```appodeal_key``` parameter in the ```default_config.plist``` file (get your API key by registering at [Appodeal](https://www.appodeal.com/)). Ads will appear on the waiting screens for tickets and hotels searching by default.
@@ -71,30 +71,28 @@ Template app supports **Firebase** services. To enable them, please connect your
 
 Existing app integration
 =================
-[Travelpayouts](https://www.travelpayouts.com) Sample Flights App is an example of an existing iPhone/iPad app intergation with AviasalesKit library to add flights/hotels/car rental search. Users of your app will be able to book tickets or hotels and you will get paid.
+[Travelpayouts](https://www.travelpayouts.com) Sample Flights App is an example of an existing iPhone/iPad app integration with AviasalesKit library to add flights/hotels/car rental search. Users of your app will be able to book tickets or hotels and you will get paid.
 
 To track statistics and payments, please visit our affiliate network website — [Travelpayouts.com](https://www.travelpayouts.com/).
 
 To learn more about the Travelpayouts affiliate network, please visit [Travelpayouts FAQ](https://support.travelpayouts.com/hc/en-us/articles/203955613-Commission-and-payments).
 
 ## Library integration
-App should support iOS 12.0 or newer as the minimum iOS version, and it should support Swift language. If your app is written in Objective-C you can wrap all library calls in a class which will be available in Objective-C.
+App should support iOS 13.0 or newer as the minimum iOS version, and it should support Swift language. If your app is written in Objective-C you can wrap all library calls in a class which will be available in Objective-C.
 
 ### Add CocoaPods dependencies
 Add the following function with dependencies to Podfile
 ```ruby
 def aviasales_kit_dependencies
-    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.3.podspec'
+    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.podspec'
 
     # forked AviasalesKit dependencies
     pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
-    pod "SloppySwiper", git: 'https://github.com/glassoff/SloppySwiper.git', branch: 'aviasales'
     pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3770df30ee072a728becb8f1f6b7c29276a3dab4'
 
     # suppress warnings
     pod 'TTTAttributedLabel', inhibit_warnings: true
     pod 'BZipCompression', inhibit_warnings: true
-    pod 'GRMustache', inhibit_warnings: true
     pod 'PromiseKit', inhibit_warnings: true
     pod 'SnowplowTracker', inhibit_warnings: true
 end
@@ -154,7 +152,7 @@ The library requires some changes in info.plist to work correctly:
 <key>NSLocationWhenInUseUsageDescription</key>
 <string>Used to find nearby hotels.</string>
 ```
-NSAppTransportSecurity changes are required for some booking agencies. NSLocationWhenInUseUsageDescription is requred for nearest hotels search function.
+NSAppTransportSecurity changes are required for some booking agencies. NSLocationWhenInUseUsageDescription is required for nearest hotels search function.
 
 ### Fine tuning
 You can configure some of the same settings as in the Travel App.
