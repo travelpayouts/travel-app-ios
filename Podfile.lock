@@ -39,7 +39,7 @@ PODS:
     - StackAnalytics (~> 1.2.0)
     - StackIAB (~> 1.5.0)
     - StackModules (~> 1.1.7)
-  - AviasalesKit (6.6):
+  - AviasalesKit (6.6.1):
     - Alamofire (= 4.9.1)
     - Apollo (= 0.44.0)
     - BZipCompression (= 1.0.2)
@@ -130,12 +130,12 @@ PODS:
     - FirebaseCoreDiagnostics (~> 8.0)
     - GoogleUtilities/Environment (~> 7.6)
     - GoogleUtilities/Logger (~> 7.6)
-  - FirebaseCoreDiagnostics (8.11.0):
+  - FirebaseCoreDiagnostics (8.12.0):
     - GoogleDataTransport (~> 9.1)
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/Logger (~> 7.7)
     - nanopb (~> 2.30908.0)
-  - FirebaseInstallations (8.11.0):
+  - FirebaseInstallations (8.12.0):
     - FirebaseCore (~> 8.0)
     - GoogleUtilities/Environment (~> 7.7)
     - GoogleUtilities/UserDefaults (~> 7.7)
@@ -273,12 +273,12 @@ PODS:
     - StackModules (~> 1.1.7)
   - StackIAB/StackXML (1.5.2):
     - StackModules (~> 1.1.7)
-  - StackModules (1.1.8):
-    - StackModules/StackProductPresentation (= 1.1.8)
-  - StackModules/StackFoundation (1.1.8)
-  - StackModules/StackProductPresentation (1.1.8):
+  - StackModules (1.1.11):
+    - StackModules/StackProductPresentation (= 1.1.11)
+  - StackModules/StackFoundation (1.1.11)
+  - StackModules/StackProductPresentation (1.1.11):
     - StackModules/StackUIKit
-  - StackModules/StackUIKit (1.1.8):
+  - StackModules/StackUIKit (1.1.11):
     - StackModules/StackFoundation
   - SwiftProtobuf (1.18.0)
   - TTTAttributedLabel (2.0.0)
@@ -289,7 +289,7 @@ PODS:
 DEPENDENCIES:
   - APDAmazonAdsAdapter (= 2.10.3.1)
   - APDBidMachineAdapter (= 2.10.3.1)
-  - AviasalesKit (from `https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.podspec`)
+  - AviasalesKit (from `https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.1.podspec`)
   - CollectionSwipableCellExtension (from `https://github.com/KosyanMedia/CollectionSwipableCellExtension.git`, commit `d3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0`)
   - Neon (from `https://github.com/KosyanMedia/Neon.git`, commit `3770df30ee072a728becb8f1f6b7c29276a3dab4`)
 
@@ -346,7 +346,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   AviasalesKit:
-    :podspec: https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.podspec
+    :podspec: https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.1.podspec
   CollectionSwipableCellExtension:
     :commit: d3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0
     :git: https://github.com/KosyanMedia/CollectionSwipableCellExtension.git
@@ -371,7 +371,7 @@ SPEC CHECKSUMS:
   APDBidMachineAdapter: 54df74e65e77d7d3bb81b9711605f35143878dd1
   Apollo: cc5cfeafb38e9409a8d8904f543627778719835b
   Appodeal: 8aadb75f285f87f2092c6830fa5e1f67af8d3a8c
-  AviasalesKit: e04af3d31e27b7346f07fcdf7c5c9c755e0f9e25
+  AviasalesKit: 39cdb014f139fdf3468dd3defa79f066631d0e74
   BDMAmazonAdapter: ef66f53c35f73cdf5e0019bea39c9d0cd4c0b60d
   BDMCriteoAdapter: ebc177d997f22c6e150ed5aa1d24027a256e70bb
   BDMIABAdapter: 2886e1f0b8882dc8f730942f51180971a13e23cc
@@ -384,8 +384,8 @@ SPEC CHECKSUMS:
   Firebase: 44213362f1dcc52555b935dc925ed35ac55f1b20
   FirebaseAnalytics: 319c9b3b1bdd400d60e2f415dff0c5f6959e6760
   FirebaseCore: 04186597c095da37d90ff9fd3e53bc61a1ff2440
-  FirebaseCoreDiagnostics: 64d9709d804a6c25bd77841371c1fcfd909d5601
-  FirebaseInstallations: 044eede8a049bce71c4541ee68d6e4364fcbe774
+  FirebaseCoreDiagnostics: 3b40dfadef5b90433a60ae01f01e90fe87aa76aa
+  FirebaseInstallations: 25764cf322e77f99449395870a65b2bef88e1545
   FloatingPanel: 523cb50f490f151fc03fabf24a8322e44d22f65f
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GoogleAppMeasurement: a3311dbcf3ea651e5a070fe8559b57c174ada081
@@ -408,13 +408,13 @@ SPEC CHECKSUMS:
   SnowplowTracker: a96fd8819c86c56844f930af372d0f4f92c35472
   StackAnalytics: 012be5ae16c8f5005eb9a2e1557b37eaaf96f71d
   StackIAB: 49e1b3215c061f2bbe39198af34edd502bdee1ae
-  StackModules: 96ec64c5009c34d7377731257e3ca3c78181395d
+  StackModules: b4a47af88b3a632cedf93b5bf9b44cb332741305
   SwiftProtobuf: c3c12645230d9b09c72267e0de89468c5543bd86
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   UIImageViewAligned: 73030dd085400e1ae7641203b5cc1546fa0495a8
   "UIView+Shake": 055ad67721de1f74d29c0a1d464697e505dfc62f
   YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
 
-PODFILE CHECKSUM: cd0ce2dc89b3e97b7ce06ec1fde32a718bbd035b
+PODFILE CHECKSUM: c8868b54a41172047de883f2a3a32abb03726b29
 
 COCOAPODS: 1.11.2

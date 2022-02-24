@@ -84,7 +84,7 @@ App should support iOS 13.0 or newer as the minimum iOS version, and it should s
 Add the following function with dependencies to Podfile
 ```ruby
 def aviasales_kit_dependencies
-    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.podspec'
+    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.1.podspec'
 
     # forked AviasalesKit dependencies
     pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
