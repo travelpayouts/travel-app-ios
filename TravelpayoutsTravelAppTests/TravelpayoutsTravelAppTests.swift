@@ -2,21 +2,30 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import XCTest
-import JRFlights
+import SharedHTTPClient
+import SharedAviasalesConfiguration
 
 class TravelpayoutsTravelAppTests: XCTestCase {
 
-    func testMetadataHeader() {
-        let metadata = AviasalesSDK.sharedInstance().serviceLocator.metadataBuilder.metadata(withSource: nil)
+    @MainActor
+    func testMetadataHeader() throws {
+        let rawMetadata = MetadataBuilder.makeDefault().build(nil)
+        let metadata = try parseMetadata(rawMetadata)
 
-        let affiliateMarker = metadata["affiliate_marker"] as! String
-        var partnerMarker = AppCredentials.current.partnerMarker() ?? ""
-        if partnerMarker.isEmpty {
-            partnerMarker = "sdk"
-        }
-        XCTAssertEqual(affiliateMarker, partnerMarker)
+        let affiliateMarker = try XCTUnwrap(metadata["affiliate_marker"])
+        XCTAssertEqual(affiliateMarker, AppCredentials.current.partnerMarker())
 
-        let host = metadata["host"] as! String
+        let host = try XCTUnwrap(metadata["host"])
         XCTAssertTrue(host.contains("sdk"))
+    }
+
+    private func parseMetadata(_ rawMetadata: MetadataBuilder.Metadata) throws -> [String: String] {
+        let infoString = try XCTUnwrap(rawMetadata["Client-Device-Info"])
+        let infoPairs = infoString.components(separatedBy: "; ")
+        let metadata: [String: String] = infoPairs.reduce(into: [:]) { memo, pairString in
+            let pair = pairString.components(separatedBy: "=")
+            memo[pair[0]] = pair[1]
+        }
+        return metadata
     }
 }

@@ -21,7 +21,7 @@ class InfoScreenRouter: JRBaseRouter {
     func showSettingsViewController() {
         let scene = SettingsScene.instantiateScene(fromRouter: self)
 
-        if is_iPad() {
+        if deprecated_is_iPad() {
             let navigationController = JRNavigationController(rootViewController: scene.viewController)
             let height = UIScreen.main.bounds.size.height
             let size = CGSize(width: 600, height: 700)

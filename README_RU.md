@@ -1,6 +1,5 @@
 Travelpayouts Travel App iOS
 =================
-[![Build Status](https://travis-ci.com/travelpayouts/travel-app-ios.svg?branch=master)](https://travis-ci.com/travelpayouts/travel-app-ios)
 #### README in [English](https://github.com/travelpayouts/travel-app-ios/blob/master/README.md)
 
 ## Описание
@@ -87,17 +86,12 @@ action_color | Цвет выделения основных действий
 Добавьте функцию с зависимостями в Podfile
 ```ruby
 def aviasales_kit_dependencies
-    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.1.podspec'
+    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.7.podspec'
 
     # forked AviasalesKit dependencies
+    pod 'EasyTipView', git: 'https://github.com/KosyanMedia/EasyTipView.git', commit: 'ab95be17ce90ff163569e50e2e2b659f003d80a4'
     pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
     pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3770df30ee072a728becb8f1f6b7c29276a3dab4'
-
-    # suppress warnings
-    pod 'TTTAttributedLabel', inhibit_warnings: true
-    pod 'BZipCompression', inhibit_warnings: true
-    pod 'PromiseKit', inhibit_warnings: true
-    pod 'SnowplowTracker', inhibit_warnings: true
 end
 ```
 

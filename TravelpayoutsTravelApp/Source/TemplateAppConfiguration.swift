@@ -75,12 +75,15 @@ private class TabBarViewControllerTabItem: NSObject, JRTabBarViewControllerTabIt
     let title: String!
     let icon: UIImage!
     var accessibilityIdentifier: String?
+    let removesBadgeOnSelection: Bool
 
     init(type: JRTabBarViewControllerTabItemType,
          title: String,
-         icon: UIImage) {
+         icon: UIImage,
+         removesBadgeOnSelection: Bool = true) {
         self.type = type
         self.title = title
         self.icon = icon
+        self.removesBadgeOnSelection = removesBadgeOnSelection
     }
 }

@@ -2,6 +2,7 @@
 // This code is distributed under the terms and conditions of the MIT license.
 
 import LibraryUIKitHelpers
+import NukeExtensions
 
 protocol InfoScreenAboutCellProtocol {
     var icon: String { get }
@@ -37,7 +38,11 @@ class InfoScreenAboutCell: UITableViewCell {
     func setup(cellModel: InfoScreenAboutCellProtocol) {
         let appIcon = UIImage(named: cellModel.icon)
         if let logo = cellModel.logo, let url = URL(string: logo) {
-            iconImageView.sd_setImage(with: url, placeholderImage: appIcon, options: .delayPlaceholder)
+            _ = loadImage(
+                with: url,
+                options: .init(placeholder: appIcon),
+                into: iconImageView
+            )
         } else {
             iconImageView.image = appIcon
         }
