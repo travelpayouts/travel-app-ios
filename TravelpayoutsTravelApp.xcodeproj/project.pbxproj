@@ -31,7 +31,6 @@
 		CE35D82122983B0300EF8901 /* InfoScreenRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35D76C22983B0300EF8901 /* InfoScreenRateCell.xib */; };
 		CE35D82222983B0300EF8901 /* InfoScreenVersionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35D76E22983B0300EF8901 /* InfoScreenVersionCell.xib */; };
 		CE35D82322983B0300EF8901 /* InfoScreenVersionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D76F22983B0300EF8901 /* InfoScreenVersionCell.swift */; };
-		CE35D83422983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D79922983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift */; };
 		CE35D83B22983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D7A022983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift */; };
 		CE35D84222983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35D7A722983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift */; };
 		CE35D880229BF84A00EF8901 /* HLEmailSender.m in Sources */ = {isa = PBXBuildFile; fileRef = CE35D87E229BF84A00EF8901 /* HLEmailSender.m */; };
@@ -107,7 +106,6 @@
 		CE35D76C22983B0300EF8901 /* InfoScreenRateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoScreenRateCell.xib; sourceTree = "<group>"; };
 		CE35D76E22983B0300EF8901 /* InfoScreenVersionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoScreenVersionCell.xib; sourceTree = "<group>"; };
 		CE35D76F22983B0300EF8901 /* InfoScreenVersionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoScreenVersionCell.swift; sourceTree = "<group>"; };
-		CE35D79922983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JRSDKSearchInfoBuilder+Config.swift"; sourceTree = "<group>"; };
 		CE35D7A022983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HLDefaultCitiesFactory+Config.swift"; sourceTree = "<group>"; };
 		CE35D7A722983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+BackBarButtonItem.swift"; sourceTree = "<group>"; };
 		CE35D871229BEFE900EF8901 /* TravelpayoutsTravelApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TravelpayoutsTravelApp-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -359,7 +357,6 @@
 			isa = PBXGroup;
 			children = (
 				CE35D7A022983B0300EF8901 /* HLDefaultCitiesFactory+Config.swift */,
-				CE35D79922983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift */,
 				CE35D7A722983B0300EF8901 /* UIBarButtonItem+BackBarButtonItem.swift */,
 			);
 			path = Extensions;
@@ -837,7 +834,6 @@
 				CE900A0D22A5389E00330E56 /* ASTJRC.swift in Sources */,
 				CE35D81822983B0300EF8901 /* InfoScreenAboutCellModel.swift in Sources */,
 				CED20042231D42580010A8EB /* AppLocalizations.swift in Sources */,
-				CE35D83422983B0300EF8901 /* JRSDKSearchInfoBuilder+Config.swift in Sources */,
 				CE35D881229BF84A00EF8901 /* HLMailComposeVC.m in Sources */,
 				CE35D81422983B0300EF8901 /* InfoScreenCellModelProtocol.swift in Sources */,
 				CE35D82022983B0300EF8901 /* InfoScreenRateCell.swift in Sources */,
@@ -1133,13 +1129,12 @@
 			baseConfigurationReference = 09FA86A706F9E1C98E3C707F /* Pods-TravelpayoutsTravelApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 6.6.1;
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.6.1;
+				MARKETING_VERSION = 6.7;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelpayoutsTravelApp/Source/TravelpayoutsTravelApp-Bridging-Header.h";
@@ -1153,13 +1148,12 @@
 			baseConfigurationReference = 0B55F0ED1CDC9C2AA4BEBAFD /* Pods-TravelpayoutsTravelApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 6.6.1;
 				INFOPLIST_FILE = TravelpayoutsTravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.6.1;
+				MARKETING_VERSION = 6.7;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelpayoutsTravelApp/Source/TravelpayoutsTravelApp-Bridging-Header.h";

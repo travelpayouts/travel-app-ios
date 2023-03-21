@@ -1,6 +1,5 @@
 Travelpayouts Travel App iOS
 =================
-[![Build Status](https://travis-ci.com/travelpayouts/travel-app-ios.svg?branch=master)](https://travis-ci.com/travelpayouts/travel-app-ios)
 #### Руководство [по-русски](https://github.com/travelpayouts/travel-app-ios/blob/master/README_RU.md)
 ## Description
 [Travelpayouts](https://www.travelpayouts.com) Travel App iOS is an app template for flights and hotels search. When your user books flight or hotel, you get paid. Aviasales, Jetradar and Hotellook official apps are based on the same code.
@@ -84,17 +83,12 @@ App should support iOS 13.0 or newer as the minimum iOS version, and it should s
 Add the following function with dependencies to Podfile
 ```ruby
 def aviasales_kit_dependencies
-    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.6.1.podspec'
+    pod 'AviasalesKit', podspec: 'https://ios.aviasales.ru/cocoapods/AviasalesKit_6.7.podspec'
 
     # forked AviasalesKit dependencies
+    pod 'EasyTipView', git: 'https://github.com/KosyanMedia/EasyTipView.git', commit: 'ab95be17ce90ff163569e50e2e2b659f003d80a4'
     pod "CollectionSwipableCellExtension", git: 'https://github.com/KosyanMedia/CollectionSwipableCellExtension.git', commit: 'd3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0'
     pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3770df30ee072a728becb8f1f6b7c29276a3dab4'
-
-    # suppress warnings
-    pod 'TTTAttributedLabel', inhibit_warnings: true
-    pod 'BZipCompression', inhibit_warnings: true
-    pod 'PromiseKit', inhibit_warnings: true
-    pod 'SnowplowTracker', inhibit_warnings: true
 end
 ```
 
