@@ -1,4 +1,5 @@
 source 'https://cdn.cocoapods.org/'
+source 'https://github.com/appodeal/CocoaPods.git'
 
 platform :ios, deployment_target: '13.0'
 use_frameworks! :linkage => :static
@@ -19,17 +20,17 @@ end
 target 'TravelpayoutsTravelApp' do
     aviasales_kit_dependencies
 
-    pod 'APDBidMachineAdapter', '2.10.3.1' # Required
-    pod 'APDAmazonAdsAdapter', '2.10.3.1'
+    pod 'APDBidMachineAdapter', '3.1.0.1' # Required
+    pod 'APDAmazonAdsAdapter', '3.1.0.1'
     # Enable following pods to use all available Interstitial ads
-    # pod 'APDAppLovinAdapter', '2.10.3.1'
-    # pod 'APDFacebookAudienceAdapter', '2.10.3.1'
-    # pod 'APDGoogleAdMobAdapter', '2.10.3.1'
-    # pod 'APDIronSourceAdapter', '2.10.3.1'
-    # pod 'APDMyTargetAdapter', '2.10.3.1'
-    # pod 'APDOguryAdapter', '2.10.3.1'
-    # pod 'APDUnityAdapter', '2.10.3.1'
-    # pod 'APDYandexAdapter', '2.10.3.1'
+    # pod 'APDAppLovinAdapter', '3.1.0.1'
+    # pod 'APDFacebookAudienceAdapter', '3.1.0.1'
+    # pod 'APDGoogleAdMobAdapter', '3.1.0.1'
+    # pod 'APDIronSourceAdapter', '3.1.0.1'
+    # pod 'APDMyTargetAdapter', '3.1.0.1'
+    # pod 'APDOguryAdapter', '3.1.0.1'
+    # pod 'APDUnityAdapter', '3.1.0.1'
+    # pod 'APDYandexAdapter', '3.1.0.1'
 
     target 'TravelpayoutsTravelAppTests' do
         inherit! :search_paths
