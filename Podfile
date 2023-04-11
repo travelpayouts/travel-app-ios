@@ -17,7 +17,12 @@ def aviasales_kit_dependencies
     pod 'Neon', git: 'https://github.com/KosyanMedia/Neon.git', commit: '3770df30ee072a728becb8f1f6b7c29276a3dab4'
 end
 
+def google_utilites
+  pod 'GoogleUtilities'
+end
+
 target 'TravelpayoutsTravelApp' do
+    google_utilites
     aviasales_kit_dependencies
 
     pod 'APDBidMachineAdapter', '3.1.0.1' # Required
@@ -38,6 +43,7 @@ target 'TravelpayoutsTravelApp' do
 end
 
 target 'SampleFlightsApp' do
+    google_utilites
     aviasales_kit_dependencies
 
     target 'SampleFlightsAppTests' do
