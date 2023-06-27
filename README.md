@@ -11,6 +11,11 @@ To track statistics and payments, please visit our affiliate network website —
 To learn more about the Travelpayouts affiliate network, please visit [Travelpayouts FAQ](https://support.travelpayouts.com/hc/en-us/articles/203955613-Commission-and-payments).
 
 ## <a name="usage"></a>How to build your own app using the template project
+
+### 🔧 Prerequisites
+
+- Xcode 14.2 (14C18)
+
 ### 📲 Setup
 1. Download the latest release of template project (not beta) here: [https://github.com/travelpayouts/travel-app-ios/releases](https://github.com/travelpayouts/travel-app-ios/releases), file Source Code (zip).
 Alternatively you can clone the repository for development.
