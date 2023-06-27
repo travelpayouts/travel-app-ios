@@ -1,18 +1,21 @@
 PODS:
-  - AmazonAd (3.1.0)
-  - APDAmazonAdsAdapter (3.1.0.1):
-    - AmazonAd (= 3.1.0)
-    - Appodeal (= 3.1.0)
-  - APDBidMachineAdapter (3.1.0.1):
-    - Appodeal (= 3.1.0)
+  - APDBidMachineAdapter (3.0.2.1):
+    - Appodeal (= 3.0.2)
     - BidMachine (= 2.0.0.5)
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
+  - APDIABAdapter (3.0.2.1):
+    - Appodeal (= 3.0.2)
+  - APDStackAnalyticsAdapter (3.0.2.1):
+    - Appodeal (= 3.0.2)
+    - StackAnalytics (~> 1.4.0)
+    - StackIAB (~> 2.0.2)
+    - StackModules (~> 1.4.0)
   - Apollo (0.53.0):
     - Apollo/Core (= 0.53.0)
   - Apollo/Core (0.53.0)
-  - Appodeal (3.1.0):
+  - Appodeal (3.0.2):
     - Protobuf
     - StackConsentManager (~> 1.2.0)
     - StackIAB (~> 2.0.2)
@@ -187,13 +190,24 @@ PODS:
   - PromiseKit/UIKit (6.18.1):
     - PromiseKit/CorePromise
   - PromisesObjC (2.1.1)
-  - Protobuf (3.22.1)
+  - Protobuf (3.23.3)
   - PureLayout (3.1.9)
   - ReachabilitySwift (5.0.0)
   - Smartling.i18n (1.0.14)
   - SnowplowTracker (4.0.1):
     - FMDB (~> 2.7)
-  - StackConsentManager (1.2.3)
+  - StackAnalytics (1.4.2):
+    - StackAnalytics/Full (= 1.4.2)
+    - StackModules (~> 1.4.0)
+  - StackAnalytics/Base (1.4.2):
+    - StackModules (~> 1.4.0)
+  - StackAnalytics/Crashes (1.4.2):
+    - StackModules (~> 1.4.0)
+  - StackAnalytics/Full (1.4.2):
+    - StackAnalytics/Base
+    - StackAnalytics/Crashes
+    - StackModules (~> 1.4.0)
+  - StackConsentManager (1.2.4)
   - StackIAB (2.0.7):
     - StackIAB/StackIABAssets (= 2.0.7)
     - StackIAB/StackMRAIDKit (= 2.0.7)
@@ -250,8 +264,9 @@ PODS:
   - YYKeyboardManager (1.0.1)
 
 DEPENDENCIES:
-  - APDAmazonAdsAdapter (= 3.1.0.1)
-  - APDBidMachineAdapter (= 3.1.0.1)
+  - APDBidMachineAdapter (= 3.0.2.1)
+  - APDIABAdapter (= 3.0.2.1)
+  - APDStackAnalyticsAdapter (= 3.0.2.1)
   - AviasalesKit (from `https://ios.aviasales.ru/cocoapods/AviasalesKit_6.7.podspec`)
   - CollectionSwipableCellExtension (from `https://github.com/KosyanMedia/CollectionSwipableCellExtension.git`, commit `d3d7c9ee8721562174cbd2c89f88b1d05bbc5fc0`)
   - EasyTipView (from `https://github.com/KosyanMedia/EasyTipView.git`, commit `ab95be17ce90ff163569e50e2e2b659f003d80a4`)
@@ -260,15 +275,17 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/appodeal/CocoaPods.git:
-    - APDAmazonAdsAdapter
-    - APDBidMachineAdapter
-    - Appodeal
     - BidMachineApiCore
     - BidMachineBiddingCore
     - BidMachineNetworkCore
+    - StackIAB
+    - StackModules
   trunk:
-    - AmazonAd
+    - APDBidMachineAdapter
+    - APDIABAdapter
+    - APDStackAnalyticsAdapter
     - Apollo
+    - Appodeal
     - BidMachine
     - BidMachineAnalyticsCore
     - BidMachineDisplayCore
@@ -299,6 +316,7 @@ SPEC REPOS:
     - ReachabilitySwift
     - Smartling.i18n
     - SnowplowTracker
+    - StackAnalytics
     - StackConsentManager
     - StackIAB
     - StackModules
@@ -333,11 +351,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/KosyanMedia/Neon.git
 
 SPEC CHECKSUMS:
-  AmazonAd: 9adf416ea36ca2325ce2040c0cf124f071089904
-  APDAmazonAdsAdapter: 24360be51aa0fcbeec650fc93717695ee7ac26e7
-  APDBidMachineAdapter: 118505c1f22a2529b459887e1d6c2e4cc100dacf
+  APDBidMachineAdapter: c8e61f4c5464c853b0bcfbeda0eb6d11450f7063
+  APDIABAdapter: 4c2d14b84be1677a0b4b958207c1a18f0032a1ee
+  APDStackAnalyticsAdapter: 3f3387957614ccecd04a863616d643652a7f2ff5
   Apollo: 204819ea82022fbc59ad05056820df867f19bd02
-  Appodeal: 357c90eeae5d954f38de031238fd9aebae9b55f6
+  Appodeal: d2f8841bc6715c2ce431438ab57be0e6f792c799
   AviasalesKit: 677d4a976dea7208066a17d3500136cc03eece76
   BidMachine: d09995aa0b59e428aa59ea568f3a2f3c9f2bfcf5
   BidMachineAnalyticsCore: 10689e8615050035dad4482cc1eb1f32ca973c6d
@@ -370,12 +388,13 @@ SPEC CHECKSUMS:
   PhoneNumberKit: 441e8b26ec88d598e3591de9061eff18f5dd12e8
   PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
-  Protobuf: d7f7c8329edf5eb8af65547a8ba3e9c1cee927d5
+  Protobuf: d9c3d7e5a3574aa6a5d521f2d9f733c76d294be8
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Smartling.i18n: 0d508b89a2a12f0e070e6369e4dcdcf46ae2d59f
   SnowplowTracker: 9bcfaa8cf229c7579b73864d9bd74839676917bc
-  StackConsentManager: 500e3d5762284eb2dc7d0a9f867faf6f2dee08b5
+  StackAnalytics: 0ccc871d90978d6eab33e3df046966bab2dbddfd
+  StackConsentManager: 155b77a3d49b4a2dc3c16a8c9457cfe0b5d62eb1
   StackIAB: 17ee4cbe12d1aa6eb79f9a79b85375250bdd50fb
   StackModules: 9c5f24f9112662fe218b93085318054c6861a44d
   StackProtobuf: 6f25d1f149f12f58863918deb733b0e3b8f96775
@@ -384,6 +403,6 @@ SPEC CHECKSUMS:
   "UIView+Shake": 055ad67721de1f74d29c0a1d464697e505dfc62f
   YYKeyboardManager: ff53d2e80d1808567a7f004028bd200d9469a89f
 
-PODFILE CHECKSUM: 98a37169e08069165815fac5f2f90a1d5ee93d68
+PODFILE CHECKSUM: 44ce4aa07ee148d017bd6d81174d796c811265a3
 
 COCOAPODS: 1.11.2
