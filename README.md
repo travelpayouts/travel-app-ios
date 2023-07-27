@@ -121,9 +121,9 @@ AviasalesViewControllersFactory.shared.setup(window: window, config: { () -> Con
     colorParams.actionColor = "CE0755" // secondary style color (search button)
 
     var config = Config()
-    config.partnerMarker = "маркер" // partner marker https://travelpayouts.com/
-    config.apiToken = "токен" // partner token https://travelpayouts.com/
-    config.carRentalLink = "ссылка" // (optional) partner link to car rental https://www.travelpayouts.com/programs
+    config.partnerMarker = "YOUR MARKER" // partner marker https://travelpayouts.com/
+    config.apiToken = "YOUR TOKEN" // partner token https://travelpayouts.com/
+    config.carRentalLink = "RENTAL PARTNER LINK" // (optional) partner link to car rental https://www.travelpayouts.com/programs
     config.colorParams = colorParams
     return config
 }())
